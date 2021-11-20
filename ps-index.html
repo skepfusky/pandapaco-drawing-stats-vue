@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Drawing Analytics</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="description" content="Some dataset crap"> -->
+	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="assets/ps-styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+	<!-- <script src="assets/ps-script.js" defer></script> -->
+  
+	<!-- Project started: October 30, 2021 -->
+</head>
+<body>
+	<header class="page-margin">
+		<nav>
+			<div class="desktop-navbar-wrapper">
+				<br>
+				<ul>
+          <li><a href="#"><i class="fas fa-adjust"></i>CHANGE THEME<span class="navbar-item-line"></span></a></li>
+					<li><a href="#"><i class="fas fa-tasks"></i>ABOUT<span class="navbar-item-line"></span></a></li>
+					<!-- <li><a href="#"><i class="far fa-question-circle"></i>WHY?<span class="navbar-item-line"></span></a></li> -->
+				</ul>
+			</div>
+			<span class="navbar-border"></span>
+		</nav>
+	</header>
+ 
+  <section>
+		<div class="sect-wrapper page-margin">
+			<h2>Traditional/Digital Dataset</h2>
+        <canvas id="mediumsChart" width="400" height="100">Your browser does not support the canvas element.</canvas>
+        <script>
+          let chartFontsDef = 18
+          let mediumsChart = document.getElementById('mediumsChart').getContext('2d');
+          let mediumsLabels = ['🎨 Traditional', '💻 Digital'];
+          let mediumsColor = ['#005035', '#007d53'];
+
+          let barChart = new Chart(mediumsChart, {
+            type: 'pie',
+            data: {
+              datasets: [{
+                data: [32, 168],
+                backgroundColor: mediumsColor,
+              hoverOffset: 5,
+              }],
+              labels: mediumsLabels,
+            },
+            options: {
+              layout: {
+                padding: 5
+              },
+              plugins: {
+                legend: {
+                position: 'bottom',
+                labels: {
+                  boxWidth: 20,
+                  font: {
+                    family: "'Lato', Arial, sans-serif",
+                    size: chartFontsDef,
+                    weight: 'bold'
+                  }
+                }
+              }
+              }
+            }
+          });
+        </script>
+		</div>
+	</section>
+
+	<section>
+		<div class="sect-wrapper page-margin">
+			<h2>Some lorem ipsum</h2>
+			<article>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium porro placeat qui officiis dignissimos ea fugit ad labore asperiores, eligendi neque, laborum, autem velit amet facere at ipsa doloremque quidem. Aspernatur voluptatum sunt debitis eius quisquam. Perspiciatis, veritatis. Earum, repudiandae. Nihil quaerat animi vitae eligendi.
+			</article>
+		</div>
+	</section>
+
+	<section>
+		<div class="sect-wrapper page-margin">
+			<h2>Why?</h2>
+			<article>
+				<p>I don't mean to initally impress him but more of a fun hobby and a large-scale web dev project to learn JavaScript and build stuff using JS frameworks and libraries lol</p>
+				<p>Also in need of multiple language translations, back-end/fullstack web developer to host this site and any issues along with it</p>
+        <p>Charts are powered using Chart.js</p>
+			</article>
+		</div>
+	</section>
+
+	<footer class="page-footer">
+	  <div class="page-margin page-footer-wrapper">
+      <div class="page-socials-wrapper">
+        <div class="socials">
+          <h3>Social side 1</h3>
+          <ul>
+            <li><a href="#"><i class="fab fa-2x fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-2x fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-2x fa-facebook"></i></a></li>
+          </ul>
+        </div>
+        <div class="socials">
+          <h3>Social side 2</h3>
+          <ul>
+            <li><a href="#"><i class="fab fa-2x fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-2x fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-2x fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-2x fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-2x fa-github"></i></a></li>
+            <li><a href="#"><i class="fab fa-2x fa-soundcloud"></i></a></li>
+            <li><a href="#"><i class="fab fa-2x fa-spotify"></i></a></li>
+          </ul>
+        </div>
+      </div>
+	    <p class="flex-center">Made by Skep/Kokoro Husky.<br>Project started on October 30, 2021.</p>
+	  </div>
+	</footer>
+</body>
+</html>
