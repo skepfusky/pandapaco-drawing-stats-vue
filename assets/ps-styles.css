@@ -14,7 +14,6 @@
 
 	/* Button hover vars */
 	--chr-btn-time: 300ms;
-	--chr-btn-transition: ease;
 }
 html {
 	scroll-behavior: smooth;
@@ -27,8 +26,7 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
-header,
-footer {
+header {
 	padding: 0 15px;
 }
 footer {
@@ -70,6 +68,13 @@ section {
 /*** REUSABLE CLASSES END ***/
 
 /*** HEADER ***/
+/*! Rework the headers goddamn **/
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background: rgb(209, 209, 209);
+  z-index: 100;
+}
 .desktop-navbar-wrapper {
 	display: flex;
 	justify-content: space-between;
@@ -203,36 +208,74 @@ th {
 }
 /*** TABLES END ***/
 
+/*** CHRONO NAVIGATIONS ***/
 .sect-wrapper {
-	text-align: center;
 	font-family: 'Lato', sans-serif;
 }
 .sect-wrapper h2 {
 	font-weight: bold;
 	margin-bottom: 10px;
 }
-.chrono-grid-wrapper {
+.chrono-btn_container {
 	display: grid;
 	gap: 10px;
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(2, 1fr);
 	padding: 20px 15px;
 }
 .chrono-btn {
 	font-weight: bold;
 	font-family: 'Lato', sans-serif;
 	font-size: 22px;
-	padding: 6px;
+	padding: 6px 12px;
 	background: rgb(240, 240, 240);
 	border-radius: 3px;
 	transform: scale(1) translateY(0);
 	box-shadow: 0 0 5px rgba(0, 0, 0, .25);
-	transition: background var(--chr-btn-time) var(--chr-btn-transition), transform var(--chr-btn-time) var(--chr-btn-transition), box-shadow var(--chr-btn-time) var(--chr-btn-transition);
+  color: black;
+	transition: background var(--chr-btn-time) ease, transform var(--chr-btn-time) ease, color var(--chr-btn-time) ease, box-shadow var(--chr-btn-time) ease;
 	text-align: center;
 }
 .chrono-btn:hover,
 .chrono-btn:focus {
 	background: var(--nv-item-hover-lt);
 	box-shadow: 0 0 12px rgba(0, 0, 0, .45);
-	transform: scale(1.02) translateY(-2px)
+	transform: scale(1.02) translateY(-2px);
+  color: white;
+}
+
+.artwork-showcase {
+  height: 450px;
+  width: 100%;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.artwork-stats-21,
+.artwork-stats-20 {
+  display: block;
+  opacity: 1 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 12px;
+  pointer-events: all !important;
+  /* transform: translatey(50px); */
+}
+
+.artwork-anim {
+  opacity: 0;
+  padding: 12px;
+  transition: all 150ms ease;
+  cursor: default;
+  pointer-events: none;
+}
+/*** CHRONO NAVIGATIONS END ***/
+
+/*** CHARTS ***/
+.default-chart-sizing {
+  width: 400px !important;
+  height: 400px !important;
 }
