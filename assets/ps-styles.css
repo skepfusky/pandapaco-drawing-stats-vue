@@ -65,6 +65,10 @@ section {
 	align-items: center;
 	justify-content: center;
 }
+.flex-row {
+	display: flex;
+}
+
 /*** REUSABLE CLASSES END ***/
 
 /*** HEADER ***/
@@ -152,12 +156,10 @@ section {
 .page-socials-wrapper {
   display: flex;
 }
-
 .socials {
   width: 50%;
   padding: 15px;
 }
-
 .socials ul {
   margin-top: 12px !important;
   list-style-type: none;
@@ -236,8 +238,7 @@ th {
 	transition: background var(--chr-btn-time) ease, transform var(--chr-btn-time) ease, color var(--chr-btn-time) ease, box-shadow var(--chr-btn-time) ease;
 	text-align: center;
 }
-.chrono-btn:hover,
-.chrono-btn:focus {
+.chrono-btn:hover {
 	background: var(--nv-item-hover-lt);
 	box-shadow: 0 0 12px rgba(0, 0, 0, .45);
 	transform: scale(1.02) translateY(-2px);
@@ -258,79 +259,27 @@ th {
   display: block;
   opacity: 1 !important;
   position: absolute;
+  width: 100%;
   top: 0;
   left: 0;
-  padding: 12px;
-  pointer-events: all !important;
+  padding-top: 12px;
 }
 .artwork-stats {
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   width: 100%;
   height: 200px;
   opacity: 0;
-  padding: 12px;
+  /* padding: 12px; */
   transition: all 150ms ease;
-  cursor: default;
-  pointer-events: none;
-}
-.artwork-stats_info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-right: 20px;
-}
-.aw-month_wrapper {
-  display: flex;
-  padding-block: 10px;
-}
-.aw-month {
-  display: grid;
-  row-gap: 3px;
-  width: 30px;
-  font-size: 12px;
-  text-align: center;
-}
-.aw-box {
-  display: block;
-  min-width: 27px;
-  min-height: 27px;
-  margin: auto;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  filter: brightness(100%);
-  transition: filter 200ms ease;
-}
-.aw-box:hover {
-  filter: brightness(150%);
-}
-aw-tooltip {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 200ms ease;
-  pointer-events: none;
-}
-.aw-box:hover aw-tooltip {
-  visibility: visible;
-  opacity: 1;
-}
-.aw-1 {
-  background:hsl(150, 66%, 30%);
-}
-.aw-2 {
-  background:hsl(150, 66%, 25%);
-}
-.aw-3 {
-  background:hsl(150, 66%, 20%);
-}
-.aw-4 {
-  background:hsl(150, 66%, 15%);
+  /* cursor: default; */
 }
 .artwork-showcase_footer {
-  position: relative;
-  bottom: 0;
+  position: absolute;
+  bottom: 7px;
   padding: 0 12px;
   display: flex;
+  width: 100%;
   justify-content: flex-end;
   align-items: center;
   padding-top: 8px;
@@ -345,6 +294,18 @@ aw-tooltip {
   height: 1px;
   background: #aaa;
 }
+.aw-1 {
+  background:hsl(150, 66%, 15%);
+}
+.aw-2 {
+  background:hsl(150, 66%, 20%);
+}
+.aw-3 {
+  background:hsl(150, 66%, 25%);
+}
+.aw-4 {
+  background:hsl(150, 66%, 30%);
+}
 .aw-box_legend {
   display: block;
   border-radius: 4px;
@@ -355,7 +316,6 @@ aw-tooltip {
 .artwork-showcase_footer >*{
   margin-left: 3px;
 }
-
 .aw-ft-text {
   font-size: 90%;
   opacity: 65%;
