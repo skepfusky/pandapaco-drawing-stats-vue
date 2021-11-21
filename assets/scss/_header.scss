@@ -1,0 +1,12 @@
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background: rgb(209, 209, 209);
+  z-index: 100;
+}
+
+.desktop-navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 12px;
+}

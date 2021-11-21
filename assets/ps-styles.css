@@ -65,82 +65,12 @@ section {
 	align-items: center;
 	justify-content: center;
 }
-.flex-row {
-	display: flex;
-}
 
 /*** REUSABLE CLASSES END ***/
 
 /*** HEADER ***/
 /*! Rework the headers goddamn **/
-.sticky-header {
-  position: sticky;
-  top: 0;
-  background: rgb(209, 209, 209);
-  z-index: 100;
-}
-.desktop-navbar-wrapper {
-	display: flex;
-	justify-content: space-between;
-	padding: 20px 12px;
-	padding-bottom: 9px !important;
-}
-.desktop-navbar-wrapper ul {
-	display: flex;
-	align-items: center;
-}
-.desktop-navbar-wrapper li {
-	list-style: none;
-	font-weight: bold;
-	margin-left: 10px;
-}
-.desktop-navbar-wrapper a {
-	transition: color var(--nv-item-time) ease-out;
-	color: #000;
-}
-.desktop-navbar-wrapper a:hover {
-	color: var(--nv-item-hover-lt);
-}
-.desktop-navbar-wrapper .fas,
-.desktop-navbar-wrapper .far {
-	margin: 0 9px;
-	font-size: 15px;
-  transform: translateY(1px);
-}
-.navbar-item-line {
-	display: block;
-	width: 0%;
-	transition: width var(--nv-item-time) ease-out, border-bottom var(--nv-item-time) ease-out;
-	border-bottom: 3px solid #000;
-	padding-top: 10px;
-}
-.desktop-navbar-wrapper a:hover .navbar-item-line {
-	width: 103%;
-	border-bottom: 3px solid var(--nv-item-hover-lt);
-}
-.navbar-border {
-	display: block;
-	width: 100%;
-	border-top: 1px solid #000;
-}
-@media only screen and (min-width: 1280px) {
-	.desktop-navbar-wrapper {
-		font-size: 18px;
-		padding: 27px 12px;
-	}
-	.desktop-navbar-wrapper .fas,
-	.desktop-navbar-wrapper .far {
-	  margin: 0 17px;
-		font-size: 18px;
-		transform: translateY(1px);
-	}
-}
-/* Display navbar on phones */
-@media only screen and (max-width: 600px) {
-	.desktop-navbar-wrapper {
-		display: none;
-	}
-}
+
 /*** HEADER END ***/
 
 /*** FOOTER ***/

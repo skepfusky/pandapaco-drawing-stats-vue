@@ -1,0 +1,9 @@
+@use 'scss/mixins';
+@use 'scss/header';
+// @use 'scss/footer';
+
+/*** CHARTS ***/
+.default-chart-sizing {
+  width: 400px !important;
+  height: 400px !important;
+}
