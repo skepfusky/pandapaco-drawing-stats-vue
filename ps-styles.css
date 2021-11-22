@@ -74,7 +74,7 @@ section {
 /*** HEADER END ***/
 
 /*** FOOTER ***/
-.page-footer {
+/* .page-footer {
 	text-align: center;
 }
 .page-footer-wrapper {
@@ -119,7 +119,7 @@ section {
   .socials {
     width: 100%;
   }
-}
+} */
 /*** FOOTER END ***/
 
 /*** TABLES ***/
@@ -195,14 +195,10 @@ th {
   padding-top: 12px;
 }
 .artwork-stats {
-  /* display: flex; */
-  /* justify-content: center; */
   width: 100%;
   height: 200px;
   opacity: 0;
-  /* padding: 12px; */
   transition: all 150ms ease;
-  /* cursor: default; */
 }
 .artwork-showcase_footer {
   position: absolute;
