@@ -1,9 +1,24 @@
 {
-  "devDependencies": {
-    "sass": "^1.43.4"
+  "name": "paco-drawing-analytics",
+  "version": "1.0.0",
+  "description": "This project collects all 1.7K drawings from a furry artist and illustrator *pandapaco*, and fetches different types of data (i.e species drawn, expressions, number of characters drawn, etc)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "chart.js": "^3.6.0",
-    "font-awesome": "^4.7.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skepfusky/pandapaco-art-statistics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skepfusky/pandapaco-art-statistics/issues"
+  },
+  "homepage": "https://github.com/skepfusky/pandapaco-art-statistics#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.43.4"
   }
 }

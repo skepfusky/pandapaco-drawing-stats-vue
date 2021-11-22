@@ -6,3 +6,4 @@ old/
 
 # I dunno
 assets/*.csv
+node_modules
