@@ -1,8 +1,9 @@
 .sticky-header {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   background: rgb(209, 209, 209);
-  z-index: 100;
+  z-index: 69;
 }
 
 .desktop-navbar-wrapper {

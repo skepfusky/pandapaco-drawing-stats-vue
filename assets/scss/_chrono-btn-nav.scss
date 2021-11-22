@@ -1,0 +1,65 @@
+.sect-wrapper {
+  font-family: 'Lato', sans-serif;
+
+  h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
+
+$buttonHover: 150ms;
+
+.chrono-btn {
+  font-weight: bold;
+	font-family: 'Lato', sans-serif;
+	font-size: 22px;
+	padding: 6px 12px;
+	background: rgb(240, 240, 240);
+	border-radius: 3px;
+	transform: scale(1) translateY(0);
+	box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+  color: black;
+  text-align: center;
+  transition: background $buttonHover ease, transform $buttonHover ease, color $buttonHover ease, box-shadow $buttonHover ease;
+
+  &:hover {
+    background: #007d53; // Replace this with a variable
+    box-shadow: 0 0 12px rgba(0, 0, 0, .45);
+    transform: scale(1.02) translateY(-2px);
+    color: white;
+  }
+}
+
+.artwork-showcase_footer {
+  position: absolute;
+  bottom: 7px;
+  padding: 0 12px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 8px;
+
+  &::before {
+    content: '';
+    @include posAbsolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #aaa;
+  }
+}
+
+// Legend
+.aw-1 {
+  background:hsl(150, 66%, 15%);
+}
+.aw-2 {
+  background:hsl(150, 66%, 20%);
+}
+.aw-3 {
+  background:hsl(150, 66%, 25%);
+}
+.aw-4 {
+  background:hsl(150, 66%, 30%);
+}

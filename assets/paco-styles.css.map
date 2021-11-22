@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,IAAI,CAAJ,kBAAI;AACJ,IAAI,CAAJ,kBAAI;AACJ,IAAI,CAAJ,0BAAI;AACJ,IAAI,CAAJ,kBAAI;AACJ,IAAI,CAAJ,kBAAI;AAEJ,gBAAgB;AAChB,AAAA,qBAAqB,CAAC;EACpB,KAAK,EAAE,gBAAgB;EACvB,MAAM,EAAE,gBAAgB;CACzB",
+    "sources": [
+        "paco-styles.scss"
+    ],
+    "names": [],
+    "file": "paco-styles.css"
+}
