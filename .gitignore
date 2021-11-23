@@ -1,10 +1,12 @@
-# Used for testing stuff and won't be included in the repo 
+###
 18A\ -\ webcomponents/
 18B\ -\ vertical\ navbar/
 18C\ -\ scss\ header\ lol/ 
-old/
+dist/*
 
-# I dunno
-assets/*.csv
+# Hide node stuff
 node_modules
 node_modules/.bin/sass
+
+# Ignore any css files to refactor them to SCSS
+*.css

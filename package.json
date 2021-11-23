@@ -4,7 +4,8 @@
   "description": "This project collects all 1.7K drawings from a furry artist and illustrator *pandapaco*, and fetches different types of data (i.e species drawn, expressions, number of characters drawn, etc)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel src/ps-index.html",
+    "build": "parcel build src/ps-index.html"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
   },
   "homepage": "https://github.com/skepfusky/pandapaco-art-statistics#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5",
+    "parcel-bundler": "^1.9.4",
     "sass": "^1.43.4"
   }
 }

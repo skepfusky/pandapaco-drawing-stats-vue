@@ -1,0 +1,13 @@
+table {
+  @include zeroMarginPadding;
+}
+tbody {
+  display: table-cell;
+  @include zeroMarginPadding;
+}
+th, td {
+  padding: 8px 15px;
+}
+th {
+	background:rgba(0, 0, 0, .45);
+}
