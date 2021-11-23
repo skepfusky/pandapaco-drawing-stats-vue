@@ -1,0 +1,16 @@
+
+table {
+  margin: 0;
+  padding: 0;
+}
+tbody {
+  margin: 0;
+  padding: 0;
+  display: table-cell;
+}
+th, td {
+  padding: 8px 15px;
+}
+th {
+	background:rgba(black, .45);
+}

@@ -1,0 +1,17 @@
+@mixin posAbsolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@mixin flexCenter($hcenter: center, $vcenter: center) {
+  display: flex;
+  justify-content: $hcenter;
+  align-items: $vcenter;
+}
+@mixin zeroMarginPadding {
+  margin: 0;
+  padding: 0;
+}
+@mixin fontLato {
+  font-family: 'Lato', Arial, sans-serif;
+}

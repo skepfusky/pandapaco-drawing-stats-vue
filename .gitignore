@@ -3,6 +3,7 @@
 18B\ -\ vertical\ navbar/
 18C\ -\ scss\ header\ lol/ 
 dist/*
+.cache/*
 
 # Hide node stuff
 node_modules
