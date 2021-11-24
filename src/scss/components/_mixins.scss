@@ -1,16 +1,16 @@
-@mixin posAbsolute {
+@mixin posAbsolute() {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-@mixin flexCenter($hCenter: center, $vCenter: center) {
+@mixin flexOrientation($hCenter: center, $vCenter: center) {
   display: flex;
   justify-content: $hCenter;
   align-items: $vCenter;
 }
 
-@mixin flexColumn {
+@mixin flexDirection($flexDir: column) {
   display: flex;
-  flex-direction: column;
+  flex-direction: $flexDir;
 }

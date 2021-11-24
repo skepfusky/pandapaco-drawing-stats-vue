@@ -3,7 +3,7 @@
 $time: 300ms;
 
 header {
-  @include mixins.posAbsolute;
+  @include mixins.posAbsolute();
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background: rgb(88, 88, 88);
   width: 100vw;
@@ -15,7 +15,7 @@ header {
   }
   li {
     margin-left: 1rem;
-    @include mixins.flexCenter(unset, center);
+    @include mixins.flexOrientation(unset, center);
     flex-direction: column;
     color: white;
     opacity: .55;
