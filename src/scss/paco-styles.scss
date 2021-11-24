@@ -1,0 +1,17 @@
+@use 'components';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none !important;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  overflow-x: hidden;
+}
