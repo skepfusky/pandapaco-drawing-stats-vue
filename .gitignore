@@ -1,8 +1,8 @@
 # Hide node and other stuff
 node_modules
 node_modules/.bin/sass
-dist/*
-.cache/*
+dist
+.cache
 
 # Ignore any css files to refactor them to SCSS for production
 *.css
