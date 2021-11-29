@@ -8,7 +8,7 @@ pacoHdrTemplate.innerHTML = `
   <style>
     @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
     :host {
-      all: inital;
+      all: initial;
       display: block;
       contain: content;
     }
@@ -36,7 +36,7 @@ pacoFtrTemplate.innerHTML = `
   <style>
     @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
     :host {
-      all: inital;
+      all: initial;
       display: block;
       contain: content;
     }
@@ -101,7 +101,7 @@ pacoFtrTemplate.innerHTML = `
   </style>
   <footer>
 		<div id="about">
-		 <strong>Strong text</strong> Some text here idk
+		<strong>Strong text</strong> Some text here idk
 		</div>
 		<div id="social-wrapper">
 			<div id="social-row">
