@@ -20,7 +20,7 @@
         </div>
       </div>
       <div id="copyright">
-        Copyright &copy; Skepfusky.<br>Some artworks provided with CC-BY-NA 3.0.<br>Site built on the Vue.js framework.
+        Copyright &copy; Skepfusky.<br>Some artworks provided with CC-BY-NA 3.0.<br>Site built entirely on the Vue.js framework.
       </div>
     </div>
   </footer>
@@ -28,6 +28,7 @@
 
 <style lang="scss" scoped>
 @import '../assets/scss/mixins.scss';
+@import '../assets/scss/colors.scss';
 @include noPseudoElement();
 footer {
   @include flexParams();
