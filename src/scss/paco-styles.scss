@@ -1,4 +1,6 @@
-@use 'components';
+@use 'components/mixins';
+@import 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300;1,400&Nanum+Gothic:wght@400;700;800&family=Montserrat:wght@500;700;800&display=swap';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css';
 
 * {
   margin: 0;
