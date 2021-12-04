@@ -20,7 +20,7 @@
         </div>
       </div>
       <div id="copyright">
-        Copyright &copy; Skepfusky.<br>Some artworks provided with CC-BY-NA 3.0.
+        Copyright &copy; Skepfusky.<br>Some artworks provided with CC-BY-NA 3.0.<br>Site built on the Vue.js framework.
       </div>
     </div>
   </footer>
