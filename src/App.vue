@@ -18,30 +18,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import 'assets/scss/mixins.scss';
 
-// The usuals
-*,*::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-*::before, *::after {
-  content: '';
-  display: block;
-}
-body {
-  overflow-x: hidden;
-  font-family: 'Lato', sans-serif;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
 </style>

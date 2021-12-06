@@ -27,8 +27,6 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../assets/scss/mixins.scss';
-@import '../assets/scss/colors.scss';
 @include noPseudoElement();
 footer {
   @include flexParams();
@@ -52,5 +50,4 @@ footer {
 #social-row {
   width: 50%;
 }
-
 </style>
