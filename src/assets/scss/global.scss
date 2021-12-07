@@ -1,23 +1,22 @@
-@import 'mixins';
-@import 'palette';
+@import "mixins";
+@import "palettes";
 
-*,*::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-*::before, *::after {
-  content: '';
-  display: block;
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 body {
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
-}
-
-ul {
-  list-style: none;
 }
 
 a {
