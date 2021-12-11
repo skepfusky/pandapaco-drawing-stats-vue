@@ -1,6 +1,6 @@
 <template>
     <a class="species-card-header" href="#">
-      <img :src="require(`@/assets/img/header-assets/${sImg}`)" :alt="`${sAlt}`"/>
+      <img :src="require(`@/assets/img/header-assets/${sImg}`)" :alt="`${sAlt}`" :aria-label="`Picture of ${$sAlt}`"/>
       <p>{{ sTitle }}</p>
     </a>
 </template>
