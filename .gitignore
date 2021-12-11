@@ -2,6 +2,11 @@
 node_modules
 /dist
 
+src/assets/img/header-assets/placeholder.png
+src/assets/img/header-assets/placeholder2.png
+src/assets/img/header-assets/placeholder3.jpg
+src/assets/img/header-assets/placeholder5.png
+src/assets/img/header-assets/placeholder6.png
 
 # local env files
 .env.local

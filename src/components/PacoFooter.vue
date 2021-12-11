@@ -27,11 +27,8 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../assets/scss/mixins.scss';
-@import '../assets/scss/colors.scss';
-@include noPseudoElement();
 footer {
-  @include flexParams();
+  @include flex_params();
   width: 100%;
   #copyright {
     text-align: center;
@@ -39,18 +36,17 @@ footer {
   }
 }
 #wrapper {
-  @include flexParams(center, unset, column);
+  @include flex_params(center, unset, column);
   width: 1280px;
   margin: 0 1rem;
   // background: green;
   padding: .75rem;
 }
 #social-wrapper {
-  @include flexParams(unset, unset, row);
+  @include flex_params(unset, unset, row);
 }
 
 #social-row {
   width: 50%;
 }
-
 </style>

@@ -1,0 +1,75 @@
+@import 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+KR:wght@100;300;500;700&family=Poppins:ital,wght@0,500;0,700;1,500;1,700&display=swap';
+
+%radius_small {border-radius: 6px;}
+%radius_circle {border-radius: 50%;}
+
+$main-b-green: #006b3c;
+$b-green: #006442;
+
+// light variants
+$b-green-w1: #3b7d5e;
+$b-green-w2: #63967c;
+$b-green-w3: #89b09b;
+$b-green-w4: #b0cabc;
+$b-green-w5: #d7e4dd;
+
+// dark variants
+$b-green-b1: #0a5338;
+$b-green-b2: #0f432d;
+$b-green-b3: #103324;
+$b-green-b4: #0f241a;
+$b-green-b5: #0a1610;
+
+// Mixins
+@mixin flex_params($hcent: center, $vcent: center, $dir: row) {
+  display: flex;
+  justify-content: $hcent;
+  align-items: $vcent;
+  flex-direction: $dir;
+}
+
+@mixin line_spacing($val: 15px) {
+  li {
+    margin-left: $val;
+    
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+@mixin pos_absolute($top: 0, $bottom: unset, $left: 0, $right: 0) {
+  position: absolute;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+}
+
+@mixin prop_transition($property: all, $time: 300ms) {
+  -webkit-transition: $property $time ease;
+          transition: $property $time ease;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
