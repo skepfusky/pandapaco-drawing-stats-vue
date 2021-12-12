@@ -1,24 +1,21 @@
 @import 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+KR:wght@100;300;500;700&family=Poppins:ital,wght@0,500;0,700;1,500;1,700&display=swap';
 
-%radius_small {border-radius: 6px;}
-%radius_circle {border-radius: 50%;}
-
-$main-b-green: #006b3c;
-$b-green: #006442;
+// Palettes
+$bamboo-main: hsl(154, 100%, 21%);
 
 // light variants
-$b-green-w1: #3b7d5e;
-$b-green-w2: #63967c;
-$b-green-w3: #89b09b;
-$b-green-w4: #b0cabc;
-$b-green-w5: #d7e4dd;
+$bamboo-light-100: hsl(152, 36%, 36%);
+$bamboo-light-200: hsl(149, 20%, 49%);
+$bamboo-light-300: hsl(148, 20%, 61%);
+$bamboo-light-400: hsl(148, 20%, 74%);
+$bamboo-light-500: hsl(148, 19%, 87%);
 
 // dark variants
-$b-green-b1: #0a5338;
-$b-green-b2: #0f432d;
-$b-green-b3: #103324;
-$b-green-b4: #0f241a;
-$b-green-b5: #0a1610;
+$bamboo-dark-100: hsl(158, 78%, 18%);
+$bamboo-dark-200: hsl(155, 63%, 16%);
+$bamboo-dark-300: hsl(154, 52%, 13%);
+$bamboo-dark-400: hsl(151, 41%, 10%);
+$bamboo-dark-500: hsl(150, 38%, 6%);
 
 // Mixins
 @mixin flex_params($hcent: center, $vcent: center, $dir: row) {
@@ -51,6 +48,38 @@ $b-green-b5: #0a1610;
           transition: $property $time ease;
 }
 
+@mixin dd_hover($hoverpos) {
+	transform: translateY(0px);
+	@include prop_transition();
+
+	&:hover {
+		transform: translateY($hoverpos);
+	}
+}
+
+// Extends
+%radius_small {
+  border-radius: 6px;
+}
+
+%radius_circle {
+  border-radius: 50%;
+}
+
+%flex_list {
+  display: flex;
+  list-style: none;
+}
+
+%disable_drag {
+  -webkit-user-drag: none; 
+  -khtml-user-drag: none; 
+  -moz-user-drag: none; 
+  -o-user-drag: none; 
+  pointer-events: none;
+}
+
+// global content
 *,
 *::before,
 *::after {
