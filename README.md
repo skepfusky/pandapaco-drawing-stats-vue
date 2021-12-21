@@ -1,4 +1,4 @@
-# Panda Paco Stats Site Thingy... I dunno lol
+# Paco Analytics Site
 
 <p align="center">
   <img src="https://img.shields.io/github/commit-activity/m/skepfusky/pandapaco-art-statistics?color=darkgreen&label=commits%2Fmonth&style=flat-square" align="center">
@@ -25,9 +25,11 @@ interesting to see in all 1.9K drawings to see said data.
 
 ## Managing data and... why?
 
-For the why part, it's really not meant to impress him in general, but he'd
+For the why part, it's initially not meant to impress him in general, but he'd
 for sure find it interesting as it's more of a fun project to a new hobby
-of mine, learning JavaScript and Vue.js in the process of other projects I do.
+of mine, learning not only JavaScript and Vue.js, but also learning a bit of
+back-end and basic data management using Firebase in the process of other
+projects I do.
 
 I wanted to show realtime data from Google Sheets and render data via charts
 from a website and I'd thought I'll take one of my artists and run it through
