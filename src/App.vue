@@ -10,8 +10,8 @@ import PacoHeader from "./components/PacoHeader.vue";
 
 export default {
   components: {
-    'paco-header': PacoHeader,
-    'paco-footer': PacoFooter,
+    PacoHeader,
+    PacoFooter,
   },
 };
 </script>

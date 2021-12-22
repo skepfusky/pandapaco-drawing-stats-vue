@@ -1,16 +1,16 @@
 <template>
     <a class="species-card-header" href="#">
-      <img :src="require(`@/assets/img/header-assets/${sImg}`)" :alt="`${sAlt}`" :aria-label="`Picture of ${$sAlt}`"/>
+      <img :src="`./src/assets/img/header/${sImg}`"/>
+      <!-- <img :src="`@/assets/img/header/${sImg}`" :alt="`${sAlt}`" :aria-label="`Picture of ${$sAlt}`"/> -->
       <p>{{ sTitle }}</p>
     </a>
 </template>
 
 <script>
 export default {
-  name: 'species_card_header',
   props: {
     sImg: {type: String, default: "placeholder4.png"},
-    sAlt: {type: String, default: "salt"},
+    // sAlt: {type: String,},
     sTitle: {type: String, default: "Bruh"},
   }
 }
@@ -24,18 +24,15 @@ export default {
 	color: var(--bamboo-light-400);
 	@extend %radius_small;
 	padding-block: 12px;
-
 	&:hover {
 		background: var(--bamboo-light-200);
     color: whitesmoke;
 	}
-
 	img {
 		width: 80px;
 		border-radius: 50%;
 		box-shadow: 0 0 12px rgba(black, 55%);
 	}
-
 	p {
 		margin-top: 12px;
 		font-size: 95%;
