@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .species-card-header {
 	@include flex_params(center, center, column);
 	@include dd_hover(-5px);

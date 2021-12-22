@@ -26,7 +26,7 @@
   </footer>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 footer {
   @include flex_params();
   width: 100%;
@@ -56,7 +56,7 @@ footer {
 
   ul {
     @extend %flex_list;
-    @include line_spacing();
+    column-gap: 15px;
   }
 }
 
