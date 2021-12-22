@@ -20,7 +20,8 @@
         </div>
       </div>
       <div id="copyright">
-        Copyright &copy; {{ new Date().getFullYear() }} Skepfusky.<br>Some artworks provided with CC-BY-NA 3.0. Site built entirely on the <a target="_blank" href="https://vuejs.org/"><img src="../assets/img/vue-logo.png" alt="Vue logo">&nbsp;Vue.js framework</a>.
+        Copyright &copy; {{ new Date().getFullYear() }} Skepfusky.<br>Some artworks provided with CC-BY-NA 3.0. Site built entirely on the <a target="_blank" href="https://vuejs.org/">Vue.js framework</a>.
+        <!-- Copyright &copy; {{ new Date().getFullYear() }} Skepfusky.<br>Some artworks provided with CC-BY-NA 3.0. Site built entirely on the <a target="_blank" href="https://vuejs.org/"><img src="../assets/img/vue-logo.png" alt="Vue logo">&nbsp;Vue.js framework</a>. -->
       </div>
     </div>
   </footer>

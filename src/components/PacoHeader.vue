@@ -17,16 +17,16 @@
             </div>
             <h2>By Species</h2>
             <div class="dropdown_species">
-              <species-card sTitle="Baekhyun" sAlt="EXO" />
-              <species-card sTitle="Xiumin" sAlt="EXO" />
-              <species-card sTitle="Sehun" sAlt="EXO" />
-              <species-card sTitle="Kyungsoo" sAlt="EXO" />
-              <species-card sTitle="Chen" sAlt="EXO" />
-              <species-card sTitle="Jin" sAlt="BTS" />
-              <species-card sTitle="Jimin" sAlt="BTS" />
-              <species-card sTitle="Jungkook" sAlt="BTS" />
-              <species-card sTitle="Namjoon" sAlt="BTS" />
-              <species-card sTitle="Suga" sAlt="BTS" />
+              <species-card sTitle="Baekhyun" />
+              <species-card sTitle="Xiumin" />
+              <species-card sTitle="Sehun" />
+              <species-card sTitle="Kyungsoo" />
+              <species-card sTitle="Chen" />
+              <species-card sTitle="Jin" />
+              <species-card sTitle="Jimin" />
+              <species-card sTitle="Jungkook" />
+              <species-card sTitle="Namjoon" />
+              <species-card sTitle="Suga" />
             </div>
           </div>
         </li>
