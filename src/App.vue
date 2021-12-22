@@ -1,21 +1,16 @@
 <template>
-  <paco-header />
-    <router-view />
-  <paco-footer />
+  <router-link to="/">Home</router-link> <router-link to="/about">About</router-link>
+  <router-view></router-view>
+  <img alt="Vue logo" src="./assets/logo.png" />
 </template>
 
-<script>
-import PacoFooter from "./components/PacoFooter.vue";
-import PacoHeader from "./components/PacoHeader.vue";
-
-export default {
-  components: {
-    'paco-header': PacoHeader,
-    'paco-footer': PacoFooter,
-  },
-};
-</script>
-
 <style lang="scss">
-//
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>
