@@ -1,0 +1,16 @@
+%radius_small {
+  border-radius: 6px;
+}
+
+%flex_list {
+  display: flex;
+  list-style: none;
+}
+
+%disable_drag {
+  -webkit-user-drag: none; 
+  -khtml-user-drag: none; 
+  -moz-user-drag: none; 
+  -o-user-drag: none; 
+  pointer-events: none;
+}

@@ -1,0 +1,28 @@
+@mixin p-flexy($hcent: center, $vcent: center, $dir: row) {
+  display: flex;
+  justify-content: $hcent;
+  align-items: $vcent;
+  flex-direction: $dir;
+}
+
+@mixin pos-a($top: 0, $bottom: unset, $left: 0, $right: 0) {
+  position: absolute;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+}
+
+@mixin prop-transition($property: all, $time: 300ms) {
+  -webkit-transition: $property $time ease;
+          transition: $property $time ease;
+}
+
+@mixin dropdown-element($hoverpos) {
+	transform: translateY(0px);
+	@include prop-transition();
+
+	&:hover {
+		transform: translateY($hoverpos);
+	}
+}

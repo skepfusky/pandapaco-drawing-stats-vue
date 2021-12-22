@@ -18,15 +18,15 @@ export default {
 
 <style lang="scss">
 .species-card-header {
-	@include flex_params(center, center, column);
-	@include dd_hover(-5px);
-	background: $bamboo-light-100;
-	color: $bamboo-light-400;
+	@include p-flexy(center, center, column);
+	@include dropdown-element(-5px);
+	background: var(--bamboo-light-100);
+	color: var(--bamboo-light-400);
 	@extend %radius_small;
 	padding-block: 12px;
 
 	&:hover {
-		background: lighten($bamboo-light-100, 10%);
+		background: var(--bamboo-light-200);
     color: whitesmoke;
 	}
 

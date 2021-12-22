@@ -28,7 +28,7 @@
 
 <style lang="scss">
 footer {
-  @include flex_params();
+  @include p-flexy();
   width: 100%;
   background: $bamboo-main;
   color: whitesmoke;
@@ -40,18 +40,18 @@ footer {
 }
 
 #wrapper {
-  @include flex_params(center, unset, column);
+  @include p-flexy(center, unset, column);
   width: 1280px;
   margin: 0 1rem;
   // background: green;
   padding: .75rem;
 }
 #social-wrapper {
-  @include flex_params(unset, unset, row);
+  @include p-flexy(unset, unset, row);
 }
 
 #social-row {
-  @include flex_params(center, unset, row);
+  @include p-flexy(center, unset, row);
   width: 50%;
 
   ul {

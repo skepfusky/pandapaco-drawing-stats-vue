@@ -54,12 +54,12 @@ export default {
 
 <style lang="scss">
 #main-nav {
-  @include flex_params(space-between, unset, row);
+  @include p-flexy(space-between, unset, row);
   background: gainsboro;
   padding: 0 1rem;
 
   nav {
-    @include flex_params(unset, unset, row);
+    @include p-flexy(unset, unset, row);
     font-size: 120%;
   }
 
@@ -72,7 +72,7 @@ export default {
   }
 
   li {
-    @include flex_params(center, center, column);
+    @include p-flexy(center, center, column);
     position: relative;
     padding: 1rem;
     font-weight: bold;
@@ -82,7 +82,7 @@ export default {
       width: 0%;
       background: $bamboo-main;
       transform: translateY(3px);
-      @include prop_transition();
+      @include prop-transition();
     }
 
     &:hover {
@@ -100,16 +100,16 @@ export default {
       }
 
       @at-root .dropdown {
-        @include prop_transition(all, 200ms);
+        @include prop-transition(all, 200ms);
         z-index: 100;
         visibility: hidden;
         // visibility: visible;
         filter: opacity(0%);
         opacity: 0;
         transform: translateY(10px);
-        @include pos_absolute(50px);
+        @include pos-a(50px);
         width: 50rem;
-        background: linear-gradient(145deg, $bamboo-dark-100, $bamboo-dark-200);
+        background: linear-gradient(145deg, var(--bamboo-dark-100), var(--bamboo-dark-200));
         box-shadow: 2px 2px 6px rgba(black, 50%);
 
         @extend %radius_small;
@@ -127,14 +127,13 @@ export default {
         &_year {
           grid-template-columns: repeat(10, 1fr);
 
-          $decades-array: "d20" $bamboo-light-300
-              lighten($bamboo-light-300, 24%),
-            "d10" $bamboo-light-200 lighten($bamboo-light-200, 24%),
-            "d00" $bamboo-light-100 lighten($bamboo-light-100, 24%);
+          $decades-array: "d20" var(--bamboo-light-300) var(--bamboo-light-400),
+            "d10" var(--bamboo-light-200) var(--bamboo-light-300),
+            "d00" var(--bamboo-light-100) var(--bamboo-light-200);
 
           @each $decade, $bg-color, $fg-color in $decades-array {
             .btn-#{$decade} {
-              @include dd_hover(-2px);
+              @include dropdown-element(-2px);
               border-color: $bg-color;
               color: $fg-color;
               padding: 0.5rem 0;
@@ -145,7 +144,7 @@ export default {
               cursor: pointer;
 
               &:hover {
-                background: lighten($bg-color, 10%);
+                filter: brightness(125%);
               }
             }
           }
