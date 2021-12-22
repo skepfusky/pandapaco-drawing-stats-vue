@@ -1,5 +1,5 @@
 {
-  "name": "paco-drawing-analytics",
+  "name": "pandapaco-art-statistics",
   "version": "1.0.0",
   "description": "This project collects all 1.7K drawings from a furry artist and illustrator *pandapaco*, and fetches different types of data (i.e species drawn, expressions, number of characters drawn, etc)",
   "main": "index.js",
