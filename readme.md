@@ -15,7 +15,7 @@ unfortunately)
 This project collects title and date of the piece, character's species and names,
 facial expressions, and the source where I got the data from. This task seem
 daunting since I have to source it through FurAffinity and DeviantArt for his
-draft drawings. Drawings from Twitter will unfortunately not be counted to ease
+draft drawings. Unfortunately, drawings from Twitter won't be counted in order to ease
 the load on my end and the dataset as well since all the data gathered will be
 hardcoded to the site.
 
