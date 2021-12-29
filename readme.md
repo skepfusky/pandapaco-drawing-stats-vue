@@ -10,6 +10,8 @@ This website collects all 1.9K drawings from a furry artist and illustrator
 number of characters drawn, etc, which are, for now, probably, hard-coded
 unfortunately)
 
+For more in-depth explanation on how I gather data, refer to the `paco-drawing-data.ipynb` file.
+
 ## History
 
 This project collects title and date of the piece, character's species and names,
