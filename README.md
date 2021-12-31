@@ -29,15 +29,16 @@ draft drawings (including his Art & Biro comics). Unfortunately, drawings from
 Twitter won't be counted in order to ease the load on my end and the dataset as
 well since all the data gathered will be hardcoded to the site.
 
-This whole process is explained further on the Juypter Notebook file.
+This whole process is explained further on the [Juypter Notebook](https://github.com/skepfusky/pandapaco-art-statistics/blob/main/paco-drawing-data.ipynb) file.
 
 This project began in October 31, 2021, and the possible inspiration from this
 project is through the McDonald's broken ice cream machine site and it'd be
-interesting to see in all 1.9K drawings to see said data.
+interesting to see in all of his drawings to see said data and it's various
+datasets.
 
 ## Why?
 
-It's really not my intention to to impress him in general, I'm just a big fan of his
+It's really not my intention to impress him in general, I'm just a big fan of his
 artwork and his art style that I'd want to see how many characters he's drawn since
 mid-2000s but he'd for sure find it interesting as it's more of a fun project to a new
 hobby of mine, learning not only JavaScript, Vue.js, but also learning a bit of back-end
