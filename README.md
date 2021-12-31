@@ -1,5 +1,9 @@
-# Panda Paco Analytics Site
-
+<p align="center">
+  <img src="" alt="Paco's YouTube Icon">
+</p>
+<h1 align="center">
+Panda Paco Analytics Site
+</h1>
 <p align="center">
   <img src="https://img.shields.io/github/commit-activity/m/skepfusky/pandapaco-art-statistics?color=darkgreen&label=commits%2Fmonth&style=flat-square" align="center">
   <img src="https://img.shields.io/github/last-commit/skepfusky/pandapaco-art-statistics?style=flat-square" align="center">
