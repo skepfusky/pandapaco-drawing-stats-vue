@@ -1,0 +1,24 @@
+{
+  "name": "pandapaco-art-statistics",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "local": "sh local.sh",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/vue-fontawesome": "^2.0.6",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "sass": "^1.45.1",
+    "vite": "^2.7.2"
+  }
+}
