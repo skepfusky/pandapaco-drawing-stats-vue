@@ -1,6 +1,6 @@
 <template>
     <a class="species-card-header" href="#">
-      <img :src="`./src/assets/img/header/${sImg}`"/>
+      <img :src="require(`../img/${sImg}`)"/>
       <!-- <img :src="`@/assets/img/header/${sImg}`" :alt="`${sAlt}`" :aria-label="`Picture of ${$sAlt}`"/> -->
       <p>{{ sTitle }}</p>
     </a>
@@ -9,7 +9,7 @@
 <script>
 export default {
   props: {
-    sImg: {type: String, default: "placeholder4.png"},
+    sImg: {type: String, default: "placeholder.png"},
     // sAlt: {type: String,},
     sTitle: {type: String, default: "Bruh"},
   }
@@ -22,17 +22,20 @@ export default {
 	@include dropdown-element(-5px);
 	background: var(--bamboo-light-100);
 	color: var(--bamboo-light-400);
-	@extend %radius_small;
+	@include soft-corners;
 	padding-block: 12px;
+
 	&:hover {
 		background: var(--bamboo-light-200);
     color: whitesmoke;
 	}
+
 	img {
 		width: 80px;
 		border-radius: 50%;
 		box-shadow: 0 0 12px rgba(black, 55%);
 	}
+
 	p {
 		margin-top: 12px;
 		font-size: 95%;
