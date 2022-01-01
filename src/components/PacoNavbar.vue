@@ -56,21 +56,26 @@ export default {
   @include p-flexy(space-between, unset, row);
   background: gainsboro;
   padding: 0 1rem;
+
   nav {
     @include p-flexy(unset, unset, row);
     font-size: 120%;
   }
+
   #site-logo {
     padding-right: 15px;
   }
+  
   ul {
-    @extend %flex_list;
+    @include flex_list();
   }
+
   li {
     @include p-flexy(center, center, column);
     position: relative;
     padding: 1rem;
     font-weight: bold;
+
     .nav-line {
       height: 3px;
       width: 0%;
@@ -78,11 +83,13 @@ export default {
       transform: translateY(3px);
       @include prop-transition();
     }
+
     &:hover {
       .nav-line {
         width: 110%;
         background: lighten($bamboo-main, 20%);
       }
+
       .dropdown {
         // visibility: hidden;
         visibility: visible;
@@ -90,6 +97,7 @@ export default {
         filter: opacity(100%);
         opacity: 1;
       }
+
       @at-root .dropdown {
         @include prop-transition(all, 200ms);
         z-index: 100;
@@ -102,8 +110,9 @@ export default {
         width: 50rem;
         background: linear-gradient(145deg, var(--bamboo-dark-100), var(--bamboo-dark-200));
         box-shadow: 2px 2px 6px rgba(black, 50%);
-        @extend %radius_small;
+        @include soft-corners;
         padding: 0.45rem 1rem;
+
         h2 {
           font-size: 115%;
           color: whitesmoke;
@@ -133,11 +142,12 @@ export default {
             }
           }
         }
+
         &_species {
           grid-template-columns: repeat(5, 1fr);
         }
-        &_year,
-        &_species {
+
+        :is(&_year, &_species) {
           display: grid;
           gap: 0.45rem;
           padding-block: 0.5rem;

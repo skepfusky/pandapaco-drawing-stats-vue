@@ -1,3 +1,11 @@
 <template>
-  <h2>asdasdasdasdas</h2>
+  <h1>Home</h1>
 </template>
+
+<script>
+export default {
+  name: 'Home',
+  components: {
+  }
+}
+</script>

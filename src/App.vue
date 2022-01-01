@@ -1,21 +1,20 @@
 <template>
-  <paco-header />
-    <router-view />
+  <paco-navbar />
+  <router-view/>
   <paco-footer />
 </template>
 
 <script>
+import PacoNavbar from "./components/PacoNavbar.vue";
 import PacoFooter from "./components/PacoFooter.vue";
-import PacoHeader from "./components/PacoHeader.vue";
 
 export default {
   components: {
-    PacoHeader,
-    PacoFooter,
-  },
-};
+    PacoNavbar, PacoFooter
+  }
+}
 </script>
 
 <style lang="scss">
-//
+// All SCSS stylesheets are loaded all across Vue components
 </style>
