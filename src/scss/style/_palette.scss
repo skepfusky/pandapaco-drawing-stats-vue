@@ -1,0 +1,26 @@
+$bamboo-main: hsl(154, 100%, 21%);
+
+$bamboo-green: (light: (100: hsl(152, 36%, 36%),
+    200: hsl(149, 20%, 49%),
+    300: hsl(148, 20%, 61%),
+    400: hsl(148, 20%, 74%),
+    500: hsl(148, 19%, 87%)),
+  dark: (100: hsl(158, 78%, 18%),
+    200: hsl(155, 63%, 16%),
+    300: hsl(154, 52%, 13%),
+    400: hsl(151, 41%, 10%),
+    500: hsl(150, 38%, 6%)),
+);
+
+:root {
+  --bamboo-main: #{$bamboo-main};
+
+  @each $theme,
+  $levels in $bamboo-green {
+
+    @each $level,
+    $color in $levels {
+      --bamboo-#{$theme}-#{$level}: #{$color};
+    }
+  }
+}
