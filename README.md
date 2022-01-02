@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/skepfusky/pandapaco-art-statistics/blob/main/public/paco-yt-icon.jpg?raw=true" width="127" alt="Paco's YouTube Icon">
+  <img src="https://github.com/skepfusky/pandapaco-art-statistics/blob/main/project-banner-new.png?raw=true" alt="Repo banner">
 </p>
 <h1 align="center">Panda Paco Analytics Site</h1>
 <p align="center">
@@ -20,30 +20,31 @@ unfortunately and have to be updated manually)
 
 I use Google Sheets to manage data and Vue.js for the website as a whole.
 
-## About
-
-This project collects title and date of the piece, character's species and names,
-facial expressions, and the source where I got the data from. This task seem
-daunting since I have to source it through FurAffinity and DeviantArt for his
-draft drawings (including his Art & Biro comics). Unfortunately, drawings from
-Twitter won't be counted in order to ease the load on my end and the dataset as
-well since all the data gathered will be hardcoded to the site.
-
-This whole process is explained further on the [Juypter Notebook](https://github.com/skepfusky/pandapaco-art-statistics/blob/main/paco-drawing-data.ipynb) file.
+## About this project
 
 This project began in October 31, 2021, and the possible inspiration from this
 project is through the McDonald's broken ice cream machine site and it'd be
 interesting to see in all of his drawings to see said data and it's various
 datasets.
 
-## Why?
+This project collects drawing data on the title and date of the piece, character's
+species and names, facial expressions, and the source where I got the data from.
+This task seem daunting since I have to manually source it through FurAffinity and
+DeviantArt for his draft drawings (including his Art & Biro comics). Unfortunately,
+drawings from Twitter won't be counted in order to ease the load on my end and
+the dataset as well since all the data gathered will be hardcoded to the site.
+
+This whole process is explained further on the [Juypter Notebook](https://github.com/skepfusky/pandapaco-art-statistics/blob/main/paco-drawing-data.ipynb) file.
+
+## Why did you create this project?
 
 It's really not my intention to impress him in general, I'm just a big fan of his
-artwork and his art style that I'd want to see how many characters he's drawn since
-mid-2000s but he'd for sure find it interesting as it's more of a fun project to a new
-hobby of mine, learning not only JavaScript, Vue.js, but also learning a bit of back-end
-and basic data management using Firebase in the process of other projects I do.
+artwork and his unique and adorable art style that I'd want to see how many characters
+he's drawn since mid-2000s but he'd for sure find it interesting as it's more of a fun
+project to a new hobby of mine, learning not only JavaScript, Vue.js, but also learning
+a bit of back-end and basic data management using Firebase in the process of other
+projects I do.
 
-Previously, I wanted to show realtime data from Google Sheets and render data via charts
-from a website and I'd thought I'll take one of my favorite artists and run it through
-this process, but I'm kinda lacking backend knowledge.
+Previously, I wanted to show realtime data from Google Sheets and render data via a chart
+library from a website and I'd thought I'll take one of my favorite artists and run it
+through this process, but I'm kinda lacking backend knowledge.
