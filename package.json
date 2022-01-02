@@ -1,5 +1,5 @@
 {
-  "name": "paco-vue",
+  "name": "pandapaco-art-statistics",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,6 +13,11 @@
     "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/vue-fontawesome": "^2.0.6",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",

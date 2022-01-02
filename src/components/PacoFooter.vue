@@ -4,18 +4,18 @@
       <div id="social-wrapper">
         <div id="social-row">
           <ul>
-            <li><a href="#">social row 1-1</a></li>
-            <li><a href="#">social row 1-2</a></li>
-            <li><a href="#">social row 1-3</a></li>
-            <li><a href="#">social row 1-4</a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i><span>YouTube</span></a></li>
+            <li><a href="#"><i class="fab fa-github"></i><span>GitHub</span></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
           </ul>
         </div>
         <div id="social-row">
           <ul>
-            <li><a href="#">social row 2-1</a></li>
-            <li><a href="#">social row 2-2</a></li>
-            <li><a href="#">social row 2-3</a></li>
-            <li><a href="#">social row 2-4</a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i><span>YouTube</span></a></li>
+            <li><a href="#"><i class="fab fa-github"></i><span>GitHub</span></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
           </ul>
         </div>
       </div>
@@ -57,9 +57,17 @@ footer {
   &-row {
     @include p-flexy(center, unset, row);
     width: 50%;
+
     ul {
       @include flex_list;
       column-gap: 15px;
+    }
+
+    li {
+      display: flex;
+    }
+    span {
+      margin-left: 5px;
     }
   }
 }
