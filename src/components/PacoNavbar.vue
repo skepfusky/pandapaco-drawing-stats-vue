@@ -6,7 +6,7 @@
       </router-link>
       <ul>
         <li>
-          <a href="#">Browse</a>
+          <a href="#">Browse Data</a>
           <span class="nav-line"></span>
           <div class="dropdown">
             <h2>By Decade</h2>
