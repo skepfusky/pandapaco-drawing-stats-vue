@@ -15,7 +15,7 @@
 > La traducción española de este README está disponible [aquí][es], traducida por
 > [Pan Con Cochayuyo][pancon] y parcialmente traducida por Google Translate.
 
-> All raw data is stored in [this Google Sheet spreadsheet][sheets].
+> All raw data is stored in [this Google Sheet spreadsheet][sheet].
 
 > For more in-depth and thorough explanation on how I gather, render, and manage
 data, refer to the [`paco-drawing-data.ipynb`][notebook] file.
