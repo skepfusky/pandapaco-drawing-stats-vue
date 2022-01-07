@@ -2,7 +2,7 @@
   <header id="main-nav">
     <nav>
       <router-link to="/">
-        <img id="site-logo" src alt="Site logo" />
+        <img id="site-logo" alt="Site logo" />
       </router-link>
       <ul>
         <li>
@@ -34,6 +34,10 @@
           <router-link to="/about">About</router-link>
           <span class="nav-line"></span>
         </li>
+        <li>
+          <router-link to="/FAQ">FAQ</router-link>
+          <span class="nav-line"></span>
+        </li>
       </ul>
     </nav>
     <div>
@@ -42,13 +46,15 @@
   </header>
 </template>
 
-<script>
-import SpeciesCard from "./SpeciesCard.vue";
-export default {
+<script lang="ts">
+import { defineComponent } from "vue";
+import SpeciesCard from "./SpeciesCard.vue"
+
+export default defineComponent({
   components: {
     SpeciesCard
   }
-};
+});
 </script>
 
 <style lang="scss">

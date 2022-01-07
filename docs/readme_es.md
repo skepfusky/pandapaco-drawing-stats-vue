@@ -19,7 +19,6 @@ de personajes dibujados, etc., que, por ahora, probablemente, están codificados
 rígida y deben  actualizarse manualmente)
 
 Utilizo Google Sheets para administrar datos y Vue.js para el sitio web en su conjunto.
-
 ## Acerca de este proyecto
 
 Este proyecto comenzó el 31 de octubre de 2021, y la posible inspiración de este proyecto

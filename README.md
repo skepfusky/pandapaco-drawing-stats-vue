@@ -9,11 +9,8 @@
 </p>
 
 > Spanish translation of this README is available [here][es],
-> translated by [Pan Con Cochayuyo][pancon] and partially translated via Google
-> Translate.
 >
-> La traducción española de este README está disponible [aquí][es], traducida por
-> [Pan Con Cochayuyo][pancon] y parcialmente traducida por Google Translate.
+> La traducción española de este README está disponible [aquí][es].
 
 > All raw data is stored in [this Google Sheet spreadsheet][sheet].
 

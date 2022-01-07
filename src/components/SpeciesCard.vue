@@ -1,18 +1,18 @@
 <template>
     <a class="species-card-header" href="#">
-      <img :src="require(`../img/${sImg}`)"/>
+      <img src="@/assets/img/placeholder.png"/>
       <!-- <img :src="`@/assets/img/header/${sImg}`" :alt="`${sAlt}`" :aria-label="`Picture of ${$sAlt}`"/> -->
-      <p>{{ sTitle }}</p>
+      <span>{{ sTitle }}</span>
     </a>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   props: {
-    sImg: {type: String, default: "placeholder.png"},
-    // sAlt: {type: String,},
-    sTitle: {type: String, default: "Bruh"},
-  }
+    sTitle: {
+      type: String,
+    }
+  },
 }
 </script>
 
