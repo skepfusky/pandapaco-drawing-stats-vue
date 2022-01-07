@@ -1,3 +1,13 @@
+@mixin flex-vendor-prefix {
+  @each $vendor in ('-moz-', '-webkit-') {
+    display: #{$vendor}-box;
+  }
+  @each $vendor in ('-webkit-', '') {
+    display: #{$vendor}-flex;
+  }
+  display: ms-flexbox;
+}
+
 @mixin p-flexy($hcent: center, $vcent: center, $dir: row) {
   display: flex;
   justify-content: $hcent;
