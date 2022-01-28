@@ -5,7 +5,6 @@
 <p align="center">
   <img src="https://img.shields.io/github/commit-activity/m/skepfusky/pandapaco-art-statistics?color=darkgreen&label=commits%2Fmonth&style=flat-square" align="center">
   <img src="https://img.shields.io/github/last-commit/skepfusky/pandapaco-art-statistics?style=flat-square" align="center">
-  <img src="https://img.shields.io/github/license/skepfusky/pandapaco-art-statistics?label=licencia&style=flat-square" align="center">
 </p>
 
 > Todos los datos sin procesar se almacenan en esta hoja de cálculo [de Google Sheet][sheet].
@@ -19,6 +18,7 @@ de personajes dibujados, etc., que, por ahora, probablemente, están codificados
 rígida y deben  actualizarse manualmente)
 
 Utilizo Google Sheets para administrar datos y Vue.js para el sitio web en su conjunto.
+
 ## Acerca de este proyecto
 
 Este proyecto comenzó el 31 de octubre de 2021, y la posible inspiración de este proyecto

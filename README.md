@@ -5,12 +5,14 @@
 <p align="center">
   <img src="https://img.shields.io/github/commit-activity/m/skepfusky/pandapaco-art-statistics?color=darkgreen&label=commits%2Fmonth">
   <img src="https://img.shields.io/github/last-commit/skepfusky/pandapaco-art-statistics">
-  <img src="https://img.shields.io/github/license/skepfusky/pandapaco-art-statistics">
 </p>
 
 > Spanish translation of this README is available [here][es],
+> translated by [Pan Con Cochayuyo][pancon] and partially translated via Google
+> Translate.
 >
-> La traducción española de este README está disponible [aquí][es].
+> La traducción española de este README está disponible [aquí][es], traducida por
+> [Pan Con Cochayuyo][pancon] y parcialmente traducida por Google Translate.
 
 > All raw data is stored in [this Google Sheet spreadsheet][sheet].
 

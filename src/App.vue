@@ -1,19 +1,19 @@
 <template>
-  <paco-navbar/>
+  <StaticHeader />
   <router-view/>
-  <paco-footer/>
+  <StaticFooter />
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
-import PacoNavbar from "@/components/PacoNavbar.vue";
-import PacoFooter from "@/components/PacoFooter.vue";
+<script>
+import StaticHeader from "./components/static/StaticHeader.vue"
+import StaticFooter from "./components/static/StaticFooter.vue"
 
-export default defineComponent({
+export default {
   components: {
-    PacoNavbar, PacoFooter
+    StaticHeader,
+    StaticFooter
   }
-})
+}
 </script>
 
 <style lang="scss">

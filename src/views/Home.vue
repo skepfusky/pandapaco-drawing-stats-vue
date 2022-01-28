@@ -1,6 +1,6 @@
 <template>
-  <main>
-    <h1>Home</h1>
+  <main class="home" role="main">
+    awesome
   </main>
 </template>
 
