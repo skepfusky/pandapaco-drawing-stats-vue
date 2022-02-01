@@ -2,7 +2,6 @@
   <pds-sidebar>
     <aside>
       <pds-species-container class="flex flex-column">
-        <!-- Render this element if isSpecies is set to 'true' -->
         <img id="sidebar-species" :src="speciesImg" :alt="speciesAlt">
         <h2 id="sidebar-heading">{{ title }}</h2>
         <div id="sidebar-row">
@@ -38,21 +37,14 @@
           .
         </div>
         <div id="sidebar-hybrid-3" class="flex flex-wrap">
-          <strong>{{ title }}</strong>&nbsp;is a mix of&nbsp;
-          <SpeciesChip />
-          ,&nbsp;
-          <SpeciesChip />
-          &nbsp;and&nbsp;
-          <SpeciesChip />
-          .
+          <strong>{{ title }}</strong>&nbsp;is a mix of&nbsp;<SpeciesChip />,&nbsp;<SpeciesChip />&nbsp;and&nbsp;<SpeciesChip />.
         </div>
       </pds-species-container>
       <pds-year-container class="flex flex-column">
-        <!-- Otherwise, render this element instead -->
         <div id="year-row" class="flex">
-          <router-link :to="`/year/${titleYear + 1}`"><i class="fas fa-caret-left"></i> {{titleYear + 1}}</router-link>
+          <router-link :to="`/year/${titleYear + 1}`" id="year-navigator" class="flex"><i class="fas fa-caret-left"></i>{{titleYear + 1}}</router-link>
           <h2 id="sidebar-heading">{{ titleYear }}</h2>
-          <router-link :to="`/year/${titleYear - 1}`">{{titleYear - 1}} <i class="fas fa-caret-right"></i></router-link>
+          <router-link :to="`/year/${titleYear - 1}`" id="year-navigator" class="flex">{{titleYear - 1}}<i class="fas fa-caret-right"></i></router-link>
         </div>
         <div id="sidebar-row">
           <TotalCounter />

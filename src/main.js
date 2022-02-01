@@ -16,8 +16,6 @@ dom.watch();
 const app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);
 
-console.error("Where's your god now!?");
-
 /*
   Define custom components in a vanilla way
   I could use a libary like polymer to handle all the custom element crap
@@ -27,12 +25,13 @@ console.error("Where's your god now!?");
   as a placeholder nameto make sure these custom elements work cuz it won't
   work otherwise
 */
+
+// #region Sidebar 
 class pdsSidebar extends HTMLElement {
   constructor() {
     super();
   }
 }
-
 customElements.define('pds-sidebar', pdsSidebar);
 
 class pdsSpeciesContainer extends HTMLElement {
@@ -40,7 +39,6 @@ class pdsSpeciesContainer extends HTMLElement {
     super();
   }
 }
-
 customElements.define('pds-species-container', pdsSpeciesContainer);
 
 class pdsYearContainer extends HTMLElement {
@@ -48,7 +46,6 @@ class pdsYearContainer extends HTMLElement {
     super();
   }
 }
-
 customElements.define('pds-year-container', pdsYearContainer);
 
 class pdsSpeciesChip extends HTMLElement {
@@ -56,7 +53,6 @@ class pdsSpeciesChip extends HTMLElement {
     super();
   }
 }
-
 customElements.define('pds-species-chip', pdsSpeciesChip);
 
 class pdsMediumBar extends HTMLElement {
@@ -64,7 +60,13 @@ class pdsMediumBar extends HTMLElement {
     super();
   }
 }
-
 customElements.define('pds-medium-bar', pdsMediumBar);
+// #endregion 
+class pdsGalleryContainer extends HTMLElement {
+  constructor() {
+    super();
+  }
+}
+customElements.define('pds-gallery-container', pdsGalleryContainer);
 
 createApp(App).use(router).mount('#app');

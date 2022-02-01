@@ -1,3 +1,4 @@
+/* Flexbox related classes */
 .flex {
   display: flex;
   display: -webkit-box;
@@ -24,6 +25,14 @@
   flex-wrap: wrap;
 }
 
+/* Gridbox */
+.grid {
+  display: grid;
+  display: -ms-grid;
+  display: -moz-grid;
+}
+
+/* Misc */
 .no-bullet {
   list-style: none !important;
 }
