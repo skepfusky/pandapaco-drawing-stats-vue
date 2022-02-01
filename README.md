@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/skepfusky/pandapaco-art-statistics/blob/main/project-banner-new.png?raw=true" alt="Repo banner">
+  <img src="https://github.com/skepfusky/pandapaco-art-statistics/blob/main/docs/project-banner-new.png?raw=true" alt="Repo banner">
 </p>
 <h1 align="center">Panda Paco Analytics Site</h1>
 <p align="center">
@@ -7,17 +7,14 @@
   <img src="https://img.shields.io/github/last-commit/skepfusky/pandapaco-art-statistics">
 </p>
 
-> Spanish translation of this README is available [here][es],
-> translated by [Pan Con Cochayuyo][pancon] and partially translated via Google
-> Translate.
+> Spanish translation of this README is available [here][es].
 >
-> La traducción española de este README está disponible [aquí][es], traducida por
-> [Pan Con Cochayuyo][pancon] y parcialmente traducida por Google Translate.
+> La traducción española de este README está disponible [aquí][es].
 
 > All raw data is stored in [this Google Sheet spreadsheet][sheet].
 
 > For more in-depth and thorough explanation on how I gather, render, and manage
-data, refer to the [`paco-drawing-data.ipynb`][notebook] file.
+> data, refer to the [`paco-drawing-data.ipynb`][notebook] file.
 
 This website collects all 1.9K drawings from a furry artist and illustrator
 *pandapaco*, and displays different types of data (i.e species drawn, expressions,

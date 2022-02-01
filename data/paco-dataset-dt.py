@@ -1,5 +1,5 @@
 # Provide dat good stuff
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plotDatGoodness
 import pandas as paco
 
 # Get 2021 compiled drawing data and filters digital and
@@ -10,6 +10,6 @@ traditional = paco2021.loc[paco2021['Medium'] == 'Traditional'].count()[0]
 
 labels = ['Digital', 'Traditional']
 
-plt.pie([digital, traditional], labels=labels, autopct='%.2f%%')
-plt.title("Mediums")
-plt.show()
+plotDatGoodness.pie([digital, traditional], labels=labels, autopct='%.2f%%')
+plotDatGoodness.title("Mediums")
+plotDatGoodness.show()
