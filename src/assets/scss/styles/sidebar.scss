@@ -3,17 +3,24 @@ pds-sidebar > aside {
   --bar-traditional:orange;
 }
 
+aside img {
+  border-radius: 50%;
+}
+
 pds-species-container,
 pds-year-container {
   row-gap: 0.55rem;
 }
 
 pds-species-container img {
-  border-radius: 50%;
+  width: 50%;
 }
 
 #sidebar-row {
   position: relative;
+  > figure > img {
+    width: 44%;
+  }
 }
 
 #year {
