@@ -9,9 +9,14 @@
     flex-direction: column;
   }
 }
+
 #component-item {
   &:first-child {
     width: var(--panel-1);
+  
+    > #component-item_seperator {
+      box-shadow: 0 0 12px rgba(#000, 15%);
+    }
 
     > #component-item_seperator.component-sticky {
       position: sticky;
@@ -29,12 +34,12 @@
       padding: 1.65ex;
       margin: 0.75ex;
       border-radius: 4px;
-      border-right: 2px dashed rgba(black, 35%);
-      border-bottom: 2px dashed rgba(black, 35%);
+      // border-right: 2px dashed rgba(#000, 35%);
+      // border-bottom: 2px dashed rgba(#000, 35%);
       
-      @media only screen and (max-width: 960px) {
-        border-right: none;
-      }
+      // @media only screen and (max-width: 960px) {
+      //   border-right: none;
+      // }
     }
   }
 }
@@ -57,20 +62,21 @@
 #round-chart {
   @media only screen and (min-width: 1400px) {
     --pds-pie-pos: 14%;
-    --pds-pie-fatness: 73%;
+    --pds-pie-thiccness: 72%;
   }
-  --pds-pie-fatness: 64%;
+
+  --pds-pie-thiccness: 64%;
   --pds-pie-pos: 18%;
   --pds-pie-color: rgb(152, 226, 55);
-  --pds-pie-border-width: 5px;
+  --pds-pie-border-width: 6px;
   position: absolute;
   top: -1px;
-  width: var(--pds-pie-fatness);
+  width: var(--pds-pie-thiccness);
   height: 100%;
   left: var(--pds-pie-pos);
   border-radius: 50%;
-  transform: scale(1.025);
-  background: radial-gradient(farthest-side, #0000 calc(99% - var(--pds-pie-border-width)), #0000 calc(100% - var(--pds-pie-border-width)));
+  transform: scale(1.055);
+  background: radial-gradient(farthest-side, #0000 calc(99% - var(--pds-pie-border-width)), rgb(70, 114, 12) calc(100% - var(--pds-pie-border-width)));
 
   &::before {
     content: "";

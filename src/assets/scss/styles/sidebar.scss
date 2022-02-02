@@ -1,6 +1,6 @@
 pds-sidebar > aside {
-  --bar-digital: rgb(33, 152, 221);
-  --bar-traditional:rgb(241, 128, 23);
+  --pds-bar-digital: rgb(33, 152, 221);
+  --pds-bar-traditional:rgb(241, 128, 23);
 }
 
 aside img {
@@ -87,13 +87,13 @@ pds-species-chip {
 
   &-digital {
     position: relative;
-    background: var(--bar-digital);
+    background: var(--pds-bar-digital);
     z-index: 2;
   }
 
   &-traditional {
     z-index: 1;
-    background: var(--bar-traditional);
+    background: var(--pds-bar-traditional);
   }
 
   &-lower-third {
