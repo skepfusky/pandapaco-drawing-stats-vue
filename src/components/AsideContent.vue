@@ -1,35 +1,9 @@
 <template>
   <pds-sidebar>
     <aside>
-      <pds-species-container class="flex flex-column">
+      <pds-species-container v-if="isSpecies" class="flex flex-column">
         <img id="sidebar-species" :src="require(`@/assets/img/${speciesImg}`)" :alt="speciesAlt">
         <h2 id="sidebar-heading">{{ title }}</h2>
-        <div id="sidebar-row">
-          <TotalCounter />
-        </div>
-        <div id="sidebar-char-drawn" class="flex">
-          <div id="char-drawn_container" class="flex flex-column">
-            <h4>{{mostDrawnLabel}}</h4>
-            <figure>
-              <div id="round-chart-visualize-wrapper">
-                <img :src="require(`@/assets/img/${mostCharImg}`)" :alt="mostCharAlt">
-                <div id="round-chart" :style="`--val: ${mostCharVal}`"></div>
-              </div>
-              <figcaption>{{mostCharAlt}} <span id="char-drawn_percentage">({{mostCharVal}}%)</span></figcaption>
-            </figure>
-          </div>
-          <div id="char-drawn_container" class="flex flex-column">
-            <h4>{{leastDrawnLabel}}</h4>
-            <figure>
-              <div id="round-chart-visualize-wrapper">
-                <img :src="require(`@/assets/img/${leastCharImg}`)" :alt="leastCharAlt">
-                <div id="round-chart" :style="`--val: ${leastCharVal}`"></div>
-              </div>
-              <figcaption>{{leastCharAlt}} <span id="char-drawn_percentage">({{leastCharVal}}%)</span></figcaption>
-            </figure>
-          </div>
-        </div>
-        <hr>
         <!-- <div id="sidebar-fictional"> -->
         <div v-if="isSpeciesFiction" id="sidebar-fictional">
           <p>
@@ -48,29 +22,40 @@
           <SpeciesChip />
           .
         </div>
+        <hr>
+        <div id="sidebar-row">
+          <TotalCounter />
+        </div>
+        <div id="sidebar-char-drawn" class="flex">
+          <div id="char-drawn_container" class="flex flex-column">
+            <h4>{{mostDrawnLabel}}</h4>
+            <ImgPieChart :pieImg="mostCharImg" :alt="mostCharAlt" :pieVal="mostCharVal" :caption="mostCharAlt" />
+          </div>
+          <div id="char-drawn_container" class="flex flex-column">
+            <h4>{{leastDrawnLabel}}</h4>
+            <ImgPieChart :pieImg="leastCharImg" :pieAlt="leastCharAlt" :pieVal="leastCharVal" :caption="leastCharAlt" />
+          </div>
+        </div>
       </pds-species-container>
-      <!-- <pds-year-container class="flex flex-column">
+      <pds-year-container v-else class="flex flex-column">
         <div id="year-row" class="flex">
           <router-link :to="`/year/${titleYear + 1}`" id="year-navigator" class="flex"><i class="fas fa-caret-left"></i>{{titleYear + 1}}</router-link>
           <h2 id="sidebar-heading">{{ titleYear }}</h2>
           <router-link :to="`/year/${titleYear - 1}`" id="year-navigator" class="flex">{{titleYear - 1}}<i class="fas fa-caret-right"></i></router-link>
         </div>
+        <hr>
         <div id="sidebar-row">
           <TotalCounter />
         </div>
-        <div id="sidebar-row">
-          <h4>{{mostDrawnLabel}}</h4>
-          <figure>
-            <img :src="require(`@/assets/img/${mostCharImg}`)" :alt="mostCharAlt">
-            <figcaption>{{mostCharAlt}}</figcaption>
-          </figure>
-        </div>
-        <div id="sidebar-row">
-          <h4>{{leastDrawnLabel}}</h4>
-          <figure>
-            <img :src="require(`@/assets/img/${leastCharImg}`)" :alt="leastCharAlt">
-            <figcaption>{{leastCharAlt}}</figcaption>
-          </figure>
+        <div id="sidebar-char-drawn" class="flex">
+          <div id="char-drawn_container" class="flex flex-column">
+            <h4>{{mostDrawnLabel}}</h4>
+            <ImgPieChart :pieImg="mostCharImg" :alt="mostCharAlt" :pieVal="mostCharVal" :caption="mostCharAlt" />
+          </div>
+          <div id="char-drawn_container" class="flex flex-column">
+            <h4>{{leastDrawnLabel}}</h4>
+            <ImgPieChart :pieImg="leastCharImg" :pieAlt="leastCharAlt" :pieVal="leastCharVal" :caption="leastCharAlt" />
+          </div>
         </div>
         <div id="sidebar-row" class="flex flex-column">
           <h4>{{mostSpeciesLabel}}</h4>
@@ -80,7 +65,7 @@
           <h4>{{leastSpeciesLabel}}</h4>
           <SpeciesChip />
         </div>
-      </pds-year-container> -->
+      </pds-year-container>
     </aside>
   </pds-sidebar>
 </template>
@@ -88,20 +73,21 @@
 <script>
 import SpeciesChip from "./aside_components/SpeciesChip.vue";
 import TotalCounter from "./aside_components/TotalCounter.vue";
+import ImgPieChart from "./layouts/ImgPieChart.vue";
 
 export default {
   props: {
-    // isSpecies: { type: Boolean },
-    title: { default: "Title" },
+    isSpecies: { type: Boolean },
+    title: { default: "Bruh" },
     titleYear: { default: new Date().getFullYear() },
     speciesImg: { type: String, default: "placeholder.png" },
     speciesAlt: { type: String, default: "Title" },
 
     mostCharImg: { type: String, default: "placeholder.png" },
-    mostCharAlt: { type: String, default: "Skop" },
+    mostCharAlt: { type: String, default: "Skeppers" },
     mostCharVal: { type: Number, default: 90 },
     leastCharImg: { type: String, default: "placeholder.png" },
-    leastCharAlt: { type: String, default: "Skop" },
+    leastCharAlt: { type: String, default: "Skeppers" },
     leastCharVal: { type: Number, default: 10 },
 
     speciesLabel: { type: String },
@@ -117,6 +103,6 @@ export default {
       leastSpeciesLabel: 'Least species drawn',
     }
   },
-  components: { SpeciesChip, TotalCounter }
+  components: { SpeciesChip, TotalCounter, ImgPieChart }
 }
 </script>

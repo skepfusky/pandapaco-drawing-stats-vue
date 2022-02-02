@@ -3,8 +3,8 @@
     <div id="component-wrapper" class="flex">
       <!-- <AsideContent :isSpecies=true /> -->
       <div id="component-item">
-        <div id="component-item_seperator">
-          <AsideContent />
+        <div id="component-item_seperator" class="component-sticky">
+          <AsideContent :isSpecies=true />
         </div>
       </div>
       <div id="component-item">

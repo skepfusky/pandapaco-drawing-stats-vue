@@ -69,4 +69,11 @@ class pdsGalleryContainer extends HTMLElement {
 }
 customElements.define('pds-gallery-container', pdsGalleryContainer);
 
+class pdsVisualEmbed extends HTMLElement {
+  constructor() {
+    super();
+  }
+}
+customElements.define('pds-visual-embedded', pdsVisualEmbed);
+
 createApp(App).use(router).mount('#app');

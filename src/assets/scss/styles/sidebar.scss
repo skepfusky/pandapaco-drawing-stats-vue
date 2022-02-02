@@ -1,6 +1,6 @@
 pds-sidebar > aside {
-  --bar-digital: green;
-  --bar-traditional:orange;
+  --bar-digital: rgb(33, 152, 221);
+  --bar-traditional:rgb(241, 128, 23);
 }
 
 aside img {
@@ -13,58 +13,12 @@ pds-year-container {
 }
 
 pds-species-container img {
-  width: 50%;
+  width: max(50%, 140px);
 }
 
 #sidebar-row,
 #sidebar-char-drawn {
   position: relative;
-}
-
-#round-chart-visualize-wrapper {
-  margin: 0 auto;
-  position: relative;
-
-  > img {
-    width: 63%;
-
-    @media only screen and (min-width: 1400px) {
-      width: 70%;
-    }
-  }
-}
-
-#round-chart {
-  @media only screen and (min-width: 1400px) {
-    --pds-pie-pos: 14%;
-    --pds-pie-fatness: 73%;
-  }
-  --pds-pie-fatness: 64%;
-  --pds-pie-pos: 18%;
-  --pds-pie-color: var(--bar-traditional);
-  --pds-pie-border-width: 9px;
-  position: absolute;
-  top: -1px;
-  width: var(--pds-pie-fatness);
-  height: 100%;
-  left: var(--pds-pie-pos);
-  border-radius: 50%;
-  background: radial-gradient(farthest-side,#0000 calc(99% - var(--pds-pie-border-width)),#0000 calc(100% - var(--pds-pie-border-width)));
-
-  &::before {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    inset: 0;
-    background: conic-gradient(var(--pds-pie-color) calc(var(--val, 50)*1%),#0000 0);
-    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--pds-pie-border-width)),#000 calc(100% - var(--pds-pie-border-width)));
-            mask:radial-gradient(farthest-side,#0000 calc(99% - var(--pds-pie-border-width)),#000 calc(100% - var(--pds-pie-border-width)));
-  }
-}
-
-#char-drawn_percentage {
-  font-size: 90%;
-  opacity: .5;
 }
 
 #sidebar-char-drawn {
@@ -84,6 +38,7 @@ pds-species-container img {
 
   h4 {
     font-size: 102.5%;
+    margin-bottom: 0.35rem;
   }
 }
 
