@@ -7,20 +7,29 @@
         <div id="sidebar-row">
           <TotalCounter />
         </div>
-        <div id="sidebar-row">
-          <h4>{{mostDrawnLabel}}</h4>
-          <figure>
-            <img :src="require(`@/assets/img/${mostCharImg}`)" :alt="mostCharAlt">
-            <figcaption>{{mostCharAlt}}</figcaption>
-          </figure>
+        <div id="sidebar-char-drawn" class="flex">
+          <div id="char-drawn_container" class="flex flex-column">
+            <h4>{{mostDrawnLabel}}</h4>
+            <figure>
+              <div id="round-chart-visualize-wrapper">
+                <img :src="require(`@/assets/img/${mostCharImg}`)" :alt="mostCharAlt">
+                <div id="round-chart" :style="`--val: ${mostCharVal}`"></div>
+              </div>
+              <figcaption>{{mostCharAlt}} <span id="char-drawn_percentage">({{mostCharVal}}%)</span></figcaption>
+            </figure>
+          </div>
+          <div id="char-drawn_container" class="flex flex-column">
+            <h4>{{leastDrawnLabel}}</h4>
+            <figure>
+              <div id="round-chart-visualize-wrapper">
+                <img :src="require(`@/assets/img/${leastCharImg}`)" :alt="leastCharAlt">
+                <div id="round-chart" :style="`--val: ${leastCharVal}`"></div>
+              </div>
+              <figcaption>{{leastCharAlt}} <span id="char-drawn_percentage">({{leastCharVal}}%)</span></figcaption>
+            </figure>
+          </div>
         </div>
-        <div id="sidebar-row">
-          <h4>{{leastDrawnLabel}}</h4>
-          <figure>
-            <img :src="require(`@/assets/img/${leastCharImg}`)" :alt="leastCharAlt">
-            <figcaption>{{leastCharAlt}}</figcaption>
-          </figure>
-        </div>
+        <hr>
         <!-- <div id="sidebar-fictional"> -->
         <div v-if="isSpeciesFiction" id="sidebar-fictional">
           <p>
@@ -90,8 +99,10 @@ export default {
 
     mostCharImg: { type: String, default: "placeholder.png" },
     mostCharAlt: { type: String, default: "Skop" },
+    mostCharVal: { type: Number, default: 90 },
     leastCharImg: { type: String, default: "placeholder.png" },
     leastCharAlt: { type: String, default: "Skop" },
+    leastCharVal: { type: Number, default: 10 },
 
     speciesLabel: { type: String },
 

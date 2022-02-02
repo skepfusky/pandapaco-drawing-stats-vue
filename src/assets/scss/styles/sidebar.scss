@@ -16,10 +16,74 @@ pds-species-container img {
   width: 50%;
 }
 
-#sidebar-row {
+#sidebar-row,
+#sidebar-char-drawn {
   position: relative;
-  > figure > img {
-    width: 44%;
+}
+
+#round-chart-visualize-wrapper {
+  margin: 0 auto;
+  position: relative;
+
+  > img {
+    width: 63%;
+
+    @media only screen and (min-width: 1400px) {
+      width: 70%;
+    }
+  }
+}
+
+#round-chart {
+  @media only screen and (min-width: 1400px) {
+    --pds-pie-pos: 14%;
+    --pds-pie-fatness: 73%;
+  }
+  --pds-pie-fatness: 64%;
+  --pds-pie-pos: 18%;
+  --pds-pie-color: var(--bar-traditional);
+  --pds-pie-border-width: 9px;
+  position: absolute;
+  top: -1px;
+  width: var(--pds-pie-fatness);
+  height: 100%;
+  left: var(--pds-pie-pos);
+  border-radius: 50%;
+  background: radial-gradient(farthest-side,#0000 calc(99% - var(--pds-pie-border-width)),#0000 calc(100% - var(--pds-pie-border-width)));
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    inset: 0;
+    background: conic-gradient(var(--pds-pie-color) calc(var(--val, 50)*1%),#0000 0);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--pds-pie-border-width)),#000 calc(100% - var(--pds-pie-border-width)));
+            mask:radial-gradient(farthest-side,#0000 calc(99% - var(--pds-pie-border-width)),#000 calc(100% - var(--pds-pie-border-width)));
+  }
+}
+
+#char-drawn_percentage {
+  font-size: 90%;
+  opacity: .5;
+}
+
+#sidebar-char-drawn {
+  flex-direction: column;
+
+  @media only screen and (min-width: 1400px) {
+    flex-direction: row;
+  }
+  @media only screen and (max-width: 960px) {
+    flex-direction: row;
+  }
+}
+
+#char-drawn_container {
+  text-align: center;
+  row-gap: 0.55ex;
+
+  h4 {
+    font-size: 102.5%;
   }
 }
 
@@ -40,7 +104,6 @@ pds-species-container img {
   }
 }
 
-
 #chip-color {
   border: 1px solid #aaa;
   width: 20px;
@@ -60,6 +123,7 @@ pds-species-chip {
   overflow: hidden;
   border-radius: 10px;
 }
+
 #pds-md {
   &-traditional, &-digital {
     border: 1px solid #aaa;
@@ -82,5 +146,13 @@ pds-species-chip {
     margin: 0 auto;    
     padding: 0.32rem 0;
     font-size: 90%;
+    flex-direction: column;
+    text-align: center;
+    @media only screen and (min-width: 1366px) {
+      flex-direction: row;
+    }
+    @media only screen and (max-width: 960px) {
+      flex-direction: row;
+    }
   }
 }
