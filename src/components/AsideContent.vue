@@ -24,7 +24,7 @@
         </div>
         <hr>
         <div id="sidebar-row">
-          <TotalCounter />
+          <TotalCounter :digitalNo="digitalNo" :traditionalNo="traditionalNo" />
         </div>
         <div id="sidebar-char-drawn" class="flex">
           <div id="char-drawn_container" class="flex flex-column">
@@ -80,6 +80,10 @@ export default {
     isSpecies: { type: Boolean },
     title: { default: "Bruh" },
     titleYear: { default: new Date().getFullYear() },
+
+    digitalNo: {type: Number, default: 50},
+    traditionalNo: {type: Number, default: 50},
+
     speciesImg: { type: String, default: "placeholder.png" },
     speciesAlt: { type: String, default: "Title" },
 

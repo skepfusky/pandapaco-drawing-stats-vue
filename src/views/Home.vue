@@ -1,10 +1,9 @@
 <template>
   <main class="home" role="main">
     <div id="component-wrapper" class="flex">
-      <!-- <AsideContent :isSpecies=true /> -->
       <div id="component-item">
         <div id="component-item_seperator" class="component-sticky">
-          <AsideContent :isSpecies=true />
+          <AsideContent :isSpecies=true :digitalNo=85.1 :traditionalNo=14.9 />
         </div>
       </div>
       <div id="component-item">

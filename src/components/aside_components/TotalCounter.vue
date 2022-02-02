@@ -16,8 +16,8 @@
 <script>
 export default {
   props: {
-    digitalNo: {type: Number, default: 50},
-    traditionalNo: {type: Number, default: 50},
+    digitalNo: {type: Number},
+    traditionalNo: {type: Number},
     charDrawn: { type: Number, default: 100 },
   },
   data() {
