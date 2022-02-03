@@ -1,9 +1,9 @@
 <template>
   <pds-visual-embedded>
     <figure>
-      <div id="round-chart-visualize-wrapper">
+      <div id="donut-visualize-wrapper">
         <img :src="require(`@/assets/img/${pieImg}`)" :alt="pieAlt" :aria-label="pieAlt" />
-        <div id="round-chart" :style="`--pds-val: ${pieVal}`"></div>
+        <div id="donut" :style="`--pds-val: ${pieVal}`"></div>
       </div>
       <figcaption>
         {{ caption }}
