@@ -1,31 +1,15 @@
 <template>
   <main class="home" role="main">
+    <div id="top">
+      <BackdropWaterfall />
+    </div>
     <div id="component-wrapper">
       <div id="stats-wrapper" class="flex flex-column">
-        <pds-stats-latest>
-          <div id="wrapper" class="flex">
-            <h1>{{ new Date().getFullYear() }}</h1>
-            <div class="grid justify-center">
-              <div id="pie-item" class="flex flex-column">
-                <h3>{{mostDrawnLabel}}</h3>
-                <ImgPieChart />
-              </div>
-              <div id="pie-item" class="flex flex-column">
-                <h3>{{leastDrawnLabel}}</h3>
-                <ImgPieChart />
-              </div>
-              <div id="pie-item" class="flex flex-column">
-                <h3>{{mostSpeciesLabel}}</h3>
-                <ImgPieChart />
-              </div>
-              <div id="pie-item" class="flex flex-column">
-                <h3>{{leastSpeciesLabel}}</h3>
-                <ImgPieChart />
-              </div>
-            </div>
-          </div>
-        </pds-stats-latest>
-        <pds-stats-latest>
+        <StatsRow :yearHeading="new Date().getFullYear()" />
+        <StatsRow :yearHeading="new Date().getFullYear() - 1" />
+        <StatsRow :yearHeading="new Date().getFullYear() - 2" />
+        
+        <!-- <pds-stats-latest>
           <div id="wrapper" class="flex">
             <h1>{{ new Date().getFullYear() - 1}}</h1>
             <div class="grid justify-center">
@@ -70,7 +54,7 @@
               </div>
             </div>
           </div>
-        </pds-stats-latest>
+        </pds-stats-latest> -->
       </div>
     </div>
     <!-- Seperated for each vue-router for species and year -->
@@ -92,7 +76,9 @@
 <script>
 import AsideContent from "../components/AsideContent.vue"
 import GalleryGrid from "../components/GalleryGrid.vue"
-import ImgPieChart from "../components/layouts/ImgPieChart.vue"
+// import ImgPieChart from "../components/layouts/ImgPieChart.vue"
+import BackdropWaterfall from "../components/BackdropWaterfall.vue"
+import StatsRow from "../components/StatsRow.vue"
 // import MediumPieChart from "../components/layouts/MediumPieChart.vue"
 
 export default {
@@ -109,7 +95,9 @@ export default {
   components: {
     AsideContent,
     GalleryGrid,
-    ImgPieChart,
+    // ImgPieChart,
+    BackdropWaterfall,
+    StatsRow,
     // MediumPieChart
   }
 }
@@ -122,19 +110,19 @@ export default {
   overflow-x: hidden !important;
   row-gap: 0.75rem;
   
-  &::before {
-    content: '';
-    background: green;
-    position: absolute;
-    inset: 0 auto auto 10.5%;
+  // &::before {
+  //   content: '';
+  //   background: green;
+  //   position: absolute;
+  //   inset: 0 auto auto 10.5%;
 
-    @media (max-width: 1280px) {
-    inset: 0 auto auto 13.5%;
-    }
+  //   @media (max-width: 1280px) {
+  //   inset: 0 auto auto 13.5%;
+  //   }
 
-    height: 610px;
-    width: 6px;
-  }
+  //   height: 610px;
+  //   width: 6px;
+  // }
 
   &::after {
     content: '';

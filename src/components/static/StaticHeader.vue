@@ -50,3 +50,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+header {
+  background: green;
+}
+</style>
