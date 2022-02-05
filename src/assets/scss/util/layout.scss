@@ -1,5 +1,6 @@
 /* Seperators */
 #component-wrapper {
+  position: relative;
   --panel-1: 27%;
   --panel-2: 83%;
   
@@ -49,8 +50,6 @@
     margin: 0 auto;
     position: relative;
     margin-bottom: 0.35rem;
-    @extend .flex;
-    @extend .justify-center;
   
     > img {
       width: 63%;
@@ -71,8 +70,6 @@
   
     --pds-donut-thiccness: 64%;
     --pds-donut-pos: 18%;
-    --pds-donut-color-fill: rgb(152, 226, 55);
-    --pds-donut-color-track: rgb(70, 114, 12);
     --pds-donut-border-width: 6px;
     position: absolute;
     top: -1px;

@@ -7,7 +7,7 @@
       <li>
         <!-- <router-link to="/browse">Browse</router-link> -->
         <!--Make this repsonsive by setting column on small screens-->
-        <div id="dropdown">
+        <div id="dropdown" class="flex">
           <div id="dropdown_content">
             <h3>In chronological order</h3>
             <!-- <router-link to="/year/2022" class="btn">2022</router-link> -->
@@ -50,9 +50,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-#dropdown {
-  @extend .flex;
-}
-</style>

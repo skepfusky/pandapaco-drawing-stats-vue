@@ -76,4 +76,11 @@ class pdsVisualEmbed extends HTMLElement {
 }
 customElements.define('pds-visual-embedded', pdsVisualEmbed);
 
+class pdsStatsLatest extends HTMLElement {
+  constructor() {
+    super();
+  }
+} 
+customElements.define('pds-stats-latest', pdsStatsLatest);
+
 createApp(App).use(router).mount('#app');

@@ -1,78 +1,79 @@
 <template>
   <main class="home" role="main">
     <div id="component-wrapper">
-      <pds-stats-latest>
-        <div id="wrapper" class="flex">
-          <h2>{{ new Date().getFullYear() }}</h2>
-          <div class="grid justify-center">
-            <div id="pie-item">
-              <h3>{{mostDrawnLabel}}</h3>
-              <ImgPieChart />
-            </div>
-            <div id="pie-item">
-              <h3>{{leastDrawnLabel}}</h3>
-              <ImgPieChart />
-            </div>
-            <div id="pie-item">
-              <h3>{{mostSpeciesLabel}}</h3>
-              <ImgPieChart />
-            </div>
-            <div id="pie-item">
-              <h3>{{leastSpeciesLabel}}</h3>
-              <ImgPieChart />
-            </div>
-          </div>
-        </div>
-      </pds-stats-latest>
-      <pds-stats-latest>
-        <div id="wrapper" class="flex">
-          <h2>{{ new Date().getFullYear() - 1}}</h2>
-          <div class="grid justify-center">
-            <div id="pie-item">
-              <h3>{{mostDrawnLabel}}</h3>
-              <ImgPieChart />
-            </div>
-            <div id="pie-item">
-              <h3>{{leastDrawnLabel}}</h3>
-              <ImgPieChart />
-            </div>
-            <div id="pie-item">
-              <h3>{{mostSpeciesLabel}}</h3>
-              <ImgPieChart />
-            </div>
-            <div id="pie-item">
-              <h3>{{leastSpeciesLabel}}</h3>
-              <ImgPieChart />
+      <div id="stats-wrapper" class="flex flex-column">
+        <pds-stats-latest>
+          <div id="wrapper" class="flex">
+            <h1>{{ new Date().getFullYear() }}</h1>
+            <div class="grid justify-center">
+              <div id="pie-item" class="flex flex-column">
+                <h3>{{mostDrawnLabel}}</h3>
+                <ImgPieChart />
+              </div>
+              <div id="pie-item" class="flex flex-column">
+                <h3>{{leastDrawnLabel}}</h3>
+                <ImgPieChart />
+              </div>
+              <div id="pie-item" class="flex flex-column">
+                <h3>{{mostSpeciesLabel}}</h3>
+                <ImgPieChart />
+              </div>
+              <div id="pie-item" class="flex flex-column">
+                <h3>{{leastSpeciesLabel}}</h3>
+                <ImgPieChart />
+              </div>
             </div>
           </div>
-        </div>
-      </pds-stats-latest>
-      <pds-stats-latest>
-        <div id="wrapper" class="flex">
-          <h2>{{ new Date().getFullYear() - 2}}</h2>
-          <div class="grid justify-center">
-            <div id="pie-item">
-              <h3>{{mostDrawnLabel}}</h3>
-              <ImgPieChart />
-            </div>
-            <div id="pie-item">
-              <h3>{{leastDrawnLabel}}</h3>
-              <ImgPieChart />
-            </div>
-            <div id="pie-item">
-              <h3>{{mostSpeciesLabel}}</h3>
-              <ImgPieChart />
-            </div>
-            <div id="pie-item">
-              <h3>{{leastSpeciesLabel}}</h3>
-              <ImgPieChart />
+        </pds-stats-latest>
+        <pds-stats-latest>
+          <div id="wrapper" class="flex">
+            <h1>{{ new Date().getFullYear() - 1}}</h1>
+            <div class="grid justify-center">
+              <div id="pie-item" class="flex flex-column">
+                <h3>{{mostDrawnLabel}}</h3>
+                <ImgPieChart />
+              </div>
+              <div id="pie-item" class="flex flex-column">
+                <h3>{{leastDrawnLabel}}</h3>
+                <ImgPieChart />
+              </div>
+              <div id="pie-item" class="flex flex-column">
+                <h3>{{mostSpeciesLabel}}</h3>
+                <ImgPieChart />
+              </div>
+              <div id="pie-item" class="flex flex-column">
+                <h3>{{leastSpeciesLabel}}</h3>
+                <ImgPieChart />
+              </div>
             </div>
           </div>
-        </div>
-      </pds-stats-latest>
-      
+        </pds-stats-latest>
+        <pds-stats-latest>
+          <div id="wrapper" class="flex">
+            <h1>{{ new Date().getFullYear() - 2}}</h1>
+            <div class="grid justify-center">
+              <div id="pie-item" class="flex flex-column">
+                <h3>{{mostDrawnLabel}}</h3>
+                <ImgPieChart />
+              </div>
+              <div id="pie-item" class="flex flex-column">
+                <h3>{{leastDrawnLabel}}</h3>
+                <ImgPieChart />
+              </div>
+              <div id="pie-item" class="flex flex-column">
+                <h3>{{mostSpeciesLabel}}</h3>
+                <ImgPieChart />
+              </div>
+              <div id="pie-item" class="flex flex-column">
+                <h3>{{leastSpeciesLabel}}</h3>
+                <ImgPieChart />
+              </div>
+            </div>
+          </div>
+        </pds-stats-latest>
+      </div>
     </div>
-
+    <!-- Seperated for each vue-router for species and year -->
     <div id="component-wrapper" class="flex">
       <div id="component-item">
         <div id="component-item_seperator" class="component-sticky">
@@ -115,19 +116,63 @@ export default {
 </script>
 
 <style lang="scss">
-pds-stats-latest {
-  #pie-item {
-    width: 13.5rem;
-    margin: 0 auto;
-    row-gap: 0.55rem;
-    text-align: center;
-    @extend .flex;
-    @extend .flex-column;
+#stats-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow-x: hidden !important;
+  row-gap: 0.75rem;
+  
+  &::before {
+    content: '';
+    background: green;
+    position: absolute;
+    inset: 0 auto auto 10.5%;
+
+    @media (max-width: 1280px) {
+    inset: 0 auto auto 13.5%;
+    }
+
+    height: 610px;
+    width: 6px;
   }
 
-  #wrapper {
+  &::after {
+    content: '';
+    position: absolute;
+    inset: auto auto 0 auto;
+    width: 100%;
+    height: 21rem;
+    z-index: 10;
+    background: linear-gradient(to top, rgba(white, 100%) 16%, rgba(white, 0%) 100%);
+  }
+}
+
+pds-stats-latest {
+  position: relative;
+  z-index: 2;
+
+  > #wrapper {
+    align-items: center;
+
     @media (max-width: 940px) {
       flex-direction: column;
+    }
+
+    h1 {
+      padding: 0.5ex 2rem;
+      box-shadow: 0 0 16px rgba(#000, 27%);
+      background: white;
+      border-radius: 7px;
+      margin-left: 6.4%;
+
+      @media (max-width: 940px) {
+        padding: 0.75rem;
+        box-shadow: none;
+      }
+
+      @media (max-width: 576px) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -152,6 +197,13 @@ pds-stats-latest {
     @media (max-width: 576px) {
       grid-template-columns: 1fr;
     }
+  }
+
+  #pie-item {
+    width: 13.5rem;
+    margin: 0 auto;
+    row-gap: 0.55rem;
+    text-align: center;
   }
 }
 

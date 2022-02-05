@@ -2,7 +2,6 @@
   /* Overall site design */
   --pds-bar-digital: rgb(33, 152, 221);
   --pds-bar-traditional:rgb(241, 128, 23);
-
   --bamboo-default: ;
   --bamboo-dark: ;
 
@@ -12,7 +11,7 @@
   --s-pup: ;
   --s-husky: ;
   --s-wolf: gray;
-  --s-birb: ;
+  --s-birb: royalblue;
   --s-panda: ;
   --s-bear: #5e2604;
 
@@ -20,4 +19,9 @@
   --s-folf: ;
   --s-fusky: ;
   --s-wusky: ;
+}
+
+pds-visual-embedded {
+  --pds-donut-color-fill: rgb(152, 226, 55);
+  --pds-donut-color-track: rgb(70, 114, 12);
 }
