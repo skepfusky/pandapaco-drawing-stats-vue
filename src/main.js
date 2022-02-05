@@ -83,4 +83,10 @@ class pdsStatsLatest extends HTMLElement {
 } 
 customElements.define('pds-stats-latest', pdsStatsLatest);
 
+class pdsWater extends HTMLElement {
+  constructor() {
+    super();
+  }
+}
+customElements.define('pds-backdrop-waterfall', pdsWater);
 createApp(App).use(router).mount('#app');
