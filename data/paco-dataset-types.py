@@ -4,12 +4,12 @@ import pandas as pandapaco
 
 # Get 2021 compiled drawing data and filters digital and
 # traditional drawings
-paco2021 = pandapaco.read_csv("data/paco-drawings-2021.csv")
-digital = paco2021.loc[paco2021['Medium'] == 'Digital'].count()[0]
-traditional = paco2021.loc[paco2021['Medium'] == 'Traditional'].count()[0]
+paco2021 = pandapaco.read_csv("data/csv/paco-2021-updated.csv")
+digital = paco2021.loc[paco2021['Type'] == 'Digital'].count()[0]
+traditional = paco2021.loc[paco2021['Type'] == 'Traditional'].count()[0]
 
 labels = ['Digital', 'Traditional']
 
 plotDatGoodness.pie([digital, traditional], labels=labels, autopct='%.2f%%')
-plotDatGoodness.title("Mediums")
+plotDatGoodness.title("Types")
 plotDatGoodness.show()

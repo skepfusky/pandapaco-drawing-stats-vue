@@ -2,6 +2,8 @@
 node_modules
 /dist
 
+# lmao we don't need this
+/data/merged/*.txt
 
 # local env files
 .env.local
