@@ -88,8 +88,42 @@ huge_chunk_of_abominaton = [
 total = pandapaco.DataFrame(huge_chunk_of_abominaton, columns = ["Species", "Count"])
 total.set_index('Species')
 total_fr = total.sort_values(total.columns[1], ascending=False)
+
+# Saves to a CSV file -- will rework this sooner or probably never
+# with open('data/csv/species_min.csv', 'w') as f:
+  # species_final = total_fr.to_string(index=False)
+  # f.write(species_final)
+
+# species_final_csv = pandapaco.read_csv('data/csv/species_min.csv')
 displayhook(total_fr.head(10))
 
-# plotDatGoodness.pie(beautiful, labels=labels, autopct='%.2f%%')
-# plotDatGoodness.title("Species drawn")
-# plotDatGoodness.show()
+# Plots the data
+ott = [
+  sa.loc[sa['Species'] == 'ArcticFox'].count()[0] + sa.loc[sa['Species'] == 'Fox'].count()[0] + sa.loc[sa['Species'] == 'Foxes'].count()[0],
+  sa.loc[sa['Species'] == 'Raccoon'].count()[0],
+  sa.loc[sa['Species'] == 'Wolf'].count()[0] + sa.loc[sa['Species'] == 'Wolf?'].count()[0] + sa.loc[sa['Species'] == 'Wolves'].count()[0],
+  sa.loc[sa['Species'] == 'Panda'].count()[0] + sa.loc[sa['Species'] == 'Pandas'].count()[0],
+  sa.loc[sa['Species'] == 'Dragon'].count()[0] + sa.loc[sa['Species'] == 'Dragons'].count()[0],
+  sa.loc[sa['Species'] == 'Otter'].count()[0],
+  sa.loc[sa['Species'] == 'Bunny'].count()[0] + sa.loc[sa['Species'] == 'Rabbit'].count()[0],
+  sa.loc[sa['Species'] == 'Dog'].count()[0],
+  sa.loc[sa['Species'] == 'Bear'].count()[0],
+  sa.loc[sa['Species'] == 'RadPanda'].count()[0] + sa.loc[sa['Species'] == 'RedPanda'].count()[0],
+]
+
+ott_label = [
+  'Foxes',
+  'Raccoons',
+  'Wolves',
+  'Pandas',
+  'Dragons',
+  'Otters',
+  'Rabbits',
+  'Dogs',
+  'Bears',
+  'Red Pandas'
+]
+
+plotDatGoodness.pie(ott, labels=ott_label, autopct='%.2f%%')
+plotDatGoodness.title("Species drawn")
+plotDatGoodness.show()

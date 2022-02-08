@@ -34,7 +34,7 @@ def speciesToTxt():
   with open(pp, 'w') as f:
     f.write(kiddieland)
     
-  print('Dookied out ' + pp + 'file')
+  # print('Dookied out ' + pp + 'file')
 
 def expressionsToTxt():
   expressions_array = df.drop(columns=['Date', 'Name', 'Character(s)', 'Species', 'Type', 'Source'])
@@ -64,7 +64,7 @@ def expressionsToTxt():
   with open(pp, 'w') as f:
     f.write(kiddieland)
 
-  print('Dookied out ' + pp + 'file lol')
+  # print('Dookied out ' + pp + 'file lol')
   
 speciesToTxt()
 expressionsToTxt()
