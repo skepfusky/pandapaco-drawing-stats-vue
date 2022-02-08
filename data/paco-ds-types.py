@@ -1,4 +1,3 @@
-# Provide dat good stuff
 import matplotlib.pyplot as plotDatGoodness
 import pandas as pandapaco
 
