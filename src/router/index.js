@@ -12,7 +12,7 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    component: () => import(routeDatShit + 'About.vue')
+    component: () => import(routeDatShit + 'AboutPage.vue')
   }
 ]
 
