@@ -82,7 +82,7 @@ import StatsRow from "../components/StatsRow.vue"
 // import MediumPieChart from "../components/layouts/MediumPieChart.vue"
 
 export default {
-  name: 'Home',
+  name: 'HomePage',
   data() {
     return {
       mediumLabel: 'Digital/Traditional',
