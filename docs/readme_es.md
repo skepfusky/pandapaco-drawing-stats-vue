@@ -50,5 +50,5 @@ a través de una biblioteca de gráficos desde un sitio web y pensé que tomarí
 mis artistas favoritos y lo ejecutaría a través de este proceso, pero me falta un poco
 de conocimiento de backend.
 
-[notebook]: https://github.com/skepfusky/pandapaco-art-statistics/blob/main/paco-drawing-data.ipynb
+[notebook]: https://github.com/skepfusky/pandapaco-art-statistics/blob/main/data/paco-drawing-data.ipynb
 [sheet]: https://docs.google.com/spreadsheets/d/1fpNL-qbfZ53H-6WdqEB2X9rwn9QmM1porJqKgBC7rPk/edit?usp=sharing

@@ -2,7 +2,7 @@ from sys import displayhook
 import matplotlib.pyplot as plotDatGoodness
 import pandas as pandapaco
 
-sa = pandapaco.read_csv("data/merged/species_merged.csv")
+sa = pandapaco.read_csv("merged/species_merged.csv")
 
 # I can't believe that I've spent more than 2 days trying to figure out how to get the sum of each species and despite
 # hoping through Stack Overflow, Dev.to, and other dev blogs, I couldn't get to figure it out and starting to go insane

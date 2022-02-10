@@ -1,7 +1,7 @@
 from sys import displayhook
 import pandas as pandapaco
 
-ea = pandapaco.read_csv("data/merged/expressions_merged.csv")
+ea = pandapaco.read_csv("merged/expressions_merged.csv")
 
 another_chunk_of_abomination = [
   ['Aggressive', ea.loc[ea['Expression(s)'] == 'Aggressive'].count()[0]],
@@ -41,6 +41,6 @@ total.set_index('Expressions')
 total_fr = total.sort_values(total.columns[1], ascending=False)
 displayhook(total_fr.head(10))
 
-# ea = pandapaco.read_csv("data/merged/expressions_merged.csv")
+# ea = pandapaco.read_csv("merged/expressions_merged.csv")
 # total = ea.groupby('Expression(s)').count()
 # print(total)

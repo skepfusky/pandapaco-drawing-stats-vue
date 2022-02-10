@@ -54,5 +54,5 @@ through this process, but I'm kinda lacking backend knowledge.
 
 [es]: https://github.com/skepfusky/pandapaco-art-statistics/docs/readme_es.md
 [pancon]: https://www.youtube.com/channel/UCTI9uf8OMcIo7QQMFS0Sfzw
-[notebook]: https://github.com/skepfusky/pandapaco-art-statistics/blob/main/paco-drawing-data.ipynb
+[notebook]: https://github.com/skepfusky/pandapaco-art-statistics/blob/main/data/paco-drawing-data.ipynb
 [sheet]: https://docs.google.com/spreadsheets/d/1fpNL-qbfZ53H-6WdqEB2X9rwn9QmM1porJqKgBC7rPk/edit?usp=sharing
