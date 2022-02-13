@@ -3,7 +3,7 @@ import pandas as pandapaco
 
 # Get 2021 compiled drawing data and filters digital and
 # traditional drawings
-paco2021 = pandapaco.read_csv("data/csv/paco-2021-updated.csv")
+paco2021 = pandapaco.read_csv("csv/paco-2021-updated.csv")
 
 types_data = [
   paco2021.loc[paco2021['Type'] == 'Traditional'].count()[0],
