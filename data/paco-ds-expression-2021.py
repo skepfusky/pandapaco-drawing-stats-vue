@@ -1,7 +1,38 @@
 from sys import displayhook
+import matplotlib.pyplot as plotDatShit
 import pandas as pandapaco
 
 ea = pandapaco.read_csv("merged/expressions_merged.csv")
+
+ott = [
+    ea.loc[ea['Expression(s)'] == 'Engaged'].count()[0],
+    ea.loc[ea['Expression(s)'] == 'Neutral'].count()[0],
+    ea.loc[ea['Expression(s)'] == 'Calm'].count()[0],
+    ea.loc[ea['Expression(s)'] == 'Happy'].count()[0],
+    ea.loc[ea['Expression(s)'] == 'Playful'].count()[0],
+    ea.loc[ea['Expression(s)'] == 'Warm'].count()[0],
+    ea.loc[ea['Expression(s)'] == 'Ecstatic'].count()[0],
+    ea.loc[ea['Expression(s)'] == 'TO'].count()[0],
+    ea.loc[ea['Expression(s)'] == 'Curious'].count()[0],
+    ea.loc[ea['Expression(s)'] == 'Shy'].count()[0],
+]
+
+ott_label = [
+    'Engaged',
+    'Neutral',
+    'Calm',
+    'Happy',
+    'Playful',
+    'Warm',
+    'Ecstatic',
+    'TO',
+    'Curious',
+    'Shy',
+]
+
+plotDatShit.pie(ott, labels=ott_label, autopct='%.2f%%')
+plotDatShit.title("Total of Expression(s) drawn")
+plotDatShit.show()
 
 another_chunk_of_abomination = [
   ['Aggressive', ea.loc[ea['Expression(s)'] == 'Aggressive'].count()[0]],
@@ -40,7 +71,3 @@ total = pandapaco.DataFrame(another_chunk_of_abomination, columns = ["Expression
 total.set_index('Expressions')
 total_fr = total.sort_values(total.columns[1], ascending=False)
 displayhook(total_fr.head(10))
-
-# ea = pandapaco.read_csv("merged/expressions_merged.csv")
-# total = ea.groupby('Expression(s)').count()
-# print(total)

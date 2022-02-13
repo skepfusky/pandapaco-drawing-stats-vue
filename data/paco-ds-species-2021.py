@@ -4,6 +4,37 @@ import pandas as pandapaco
 
 sa = pandapaco.read_csv("merged/species_merged.csv")
 
+# Plots the data
+ott = [
+  sa.loc[sa['Species'] == 'ArcticFox'].count()[0] + sa.loc[sa['Species'] == 'Fox'].count()[0] + sa.loc[sa['Species'] == 'Foxes'].count()[0],
+  sa.loc[sa['Species'] == 'Raccoon'].count()[0],
+  sa.loc[sa['Species'] == 'Wolf'].count()[0] + sa.loc[sa['Species'] == 'Wolf?'].count()[0] + sa.loc[sa['Species'] == 'Wolves'].count()[0],
+  sa.loc[sa['Species'] == 'Panda'].count()[0] + sa.loc[sa['Species'] == 'Pandas'].count()[0],
+  sa.loc[sa['Species'] == 'Dragon'].count()[0] + sa.loc[sa['Species'] == 'Dragons'].count()[0],
+  sa.loc[sa['Species'] == 'Otter'].count()[0],
+  sa.loc[sa['Species'] == 'Bunny'].count()[0] + sa.loc[sa['Species'] == 'Rabbit'].count()[0],
+  sa.loc[sa['Species'] == 'Dog'].count()[0],
+  sa.loc[sa['Species'] == 'Bear'].count()[0],
+  sa.loc[sa['Species'] == 'RadPanda'].count()[0] + sa.loc[sa['Species'] == 'RedPanda'].count()[0],
+]
+
+ott_label = [
+  'Foxes',
+  'Raccoons',
+  'Wolves',
+  'Pandas',
+  'Dragons',
+  'Otters',
+  'Rabbits',
+  'Dogs',
+  'Bears',
+  'Red Pandas'
+]
+
+plotDatGoodness.pie(ott, labels=ott_label, autopct='%.2f%%')
+plotDatGoodness.title("Total of species drawn")
+plotDatGoodness.show()
+
 # I can't believe that I've spent more than 2 days trying to figure out how to get the sum of each species and despite
 # hoping through Stack Overflow, Dev.to, and other dev blogs, I couldn't get to figure it out and starting to go insane
 # with errors throwing at my face, so screw it, I'll just hard-code arrays since I'm tired of it I might be me being
@@ -96,34 +127,3 @@ total_fr = total.sort_values(total.columns[1], ascending=False)
 
 # species_final_csv = pandapaco.read_csv('data/csv/species_min.csv')
 displayhook(total_fr.head(10))
-
-# Plots the data
-ott = [
-  sa.loc[sa['Species'] == 'ArcticFox'].count()[0] + sa.loc[sa['Species'] == 'Fox'].count()[0] + sa.loc[sa['Species'] == 'Foxes'].count()[0],
-  sa.loc[sa['Species'] == 'Raccoon'].count()[0],
-  sa.loc[sa['Species'] == 'Wolf'].count()[0] + sa.loc[sa['Species'] == 'Wolf?'].count()[0] + sa.loc[sa['Species'] == 'Wolves'].count()[0],
-  sa.loc[sa['Species'] == 'Panda'].count()[0] + sa.loc[sa['Species'] == 'Pandas'].count()[0],
-  sa.loc[sa['Species'] == 'Dragon'].count()[0] + sa.loc[sa['Species'] == 'Dragons'].count()[0],
-  sa.loc[sa['Species'] == 'Otter'].count()[0],
-  sa.loc[sa['Species'] == 'Bunny'].count()[0] + sa.loc[sa['Species'] == 'Rabbit'].count()[0],
-  sa.loc[sa['Species'] == 'Dog'].count()[0],
-  sa.loc[sa['Species'] == 'Bear'].count()[0],
-  sa.loc[sa['Species'] == 'RadPanda'].count()[0] + sa.loc[sa['Species'] == 'RedPanda'].count()[0],
-]
-
-ott_label = [
-  'Foxes',
-  'Raccoons',
-  'Wolves',
-  'Pandas',
-  'Dragons',
-  'Otters',
-  'Rabbits',
-  'Dogs',
-  'Bears',
-  'Red Pandas'
-]
-
-plotDatGoodness.pie(ott, labels=ott_label, autopct='%.2f%%')
-plotDatGoodness.title("Species drawn")
-plotDatGoodness.show()
