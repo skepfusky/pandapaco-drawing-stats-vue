@@ -21,7 +21,8 @@ This website collects all 1.9K drawings from a furry artist and illustrator
 number of characters drawn, etc, which are, for now, probably, hard-coded
 unfortunately and have to be updated manually)
 
-I use Google Sheets to manage data and Vue.js for the website as a whole.
+I use Google Sheets and a handful of Python scripts to manage, parse, and plot
+data and Vue.js for the website as a whole.
 
 ## About this project
 
@@ -45,8 +46,7 @@ It's really not my intention to impress him in general, I'm just a big fan of hi
 artwork and his unique and adorable art style that I'd want to see how many characters
 he's drawn since mid-2000s but he'd for sure find it interesting as it's more of a fun
 project to a new hobby of mine, learning not only JavaScript, Vue.js, but also learning
-a bit of back-end and basic data management using Firebase in the process of other
-projects I do.
+a bit of back-end and basic data management in the process of other projects I do.
 
 Previously, I wanted to show realtime data from Google Sheets and render data via a chart
 library from a website and I'd thought I'll take one of my favorite artists and run it

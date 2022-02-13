@@ -17,7 +17,8 @@ y muestra diferentes tipos de datos (es decir, especies dibujadas, expresiones, 
 de personajes dibujados, etc., que, por ahora, probablemente, están codificados de forma
 rígida y deben  actualizarse manualmente)
 
-Utilizo Google Sheets para administrar datos y Vue.js para el sitio web en su conjunto.
+Uso Google Sheets y un puñado de scripts Python para gestionar, paralizar y trazar datos
+y Vue.js para el sitio web en su conjunto.
 
 ## Acerca de este proyecto
 
@@ -38,12 +39,12 @@ Todo este proceso se explica más detalladamente en el archivo
 
 ## ¿Por qué creaste este proyecto?
 
-Realmente no es mi intención impresionarlo en general, solo soy un gran admirador de su
-obra de arte y su estilo artístico único y adorable que me gustaría ver cuántos
-personajes ha dibujado desde mediados de la década de 2000, pero seguro que lo haría.
-Lo encuentro interesante ya que es más un proyecto divertido para un nuevo pasatiempo mío,
-aprender no solo JavaScript, Vue.js, sino también aprender un poco de administración de
-datos básicos y de back-end usando Firebase en el proceso de otros proyectos que hago.
+No es mi intención impresionarlo en general, sólo soy un gran admirador de su
+arte y su estilo de arte único y adorable que quisiera ver cuántos personajes
+ha dibujado desde mediados de los años 2000, pero seguro que lo encontraría
+interesante, ya que es más un proyecto divertido para mi nuevo hobby,
+aprendiendo no sólo JavaScript, Vue.js, sino también un poco. de gestión de
+datos básicos y de back-end en el proceso de otros proyectos que hago.
 
 Anteriormente, quería mostrar datos en tiempo real de Google Sheets y renderizar datos
 a través de una biblioteca de gráficos desde un sitio web y pensé que tomaría a uno de
