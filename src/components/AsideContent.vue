@@ -28,11 +28,11 @@
         </div>
         <div id="sidebar-char-drawn" class="flex">
           <div id="char-drawn_container" class="flex flex-column">
-            <h4>{{mostDrawnLabel}}</h4>
+            <h4>Most character drawn</h4>
             <ImgPieChart :pieImg="mostCharImg" :alt="mostCharAlt" :pieVal="mostCharVal" :caption="mostCharAlt" />
           </div>
           <div id="char-drawn_container" class="flex flex-column">
-            <h4>{{leastDrawnLabel}}</h4>
+            <h4>Least character drawn</h4>
             <ImgPieChart :pieImg="leastCharImg" :pieAlt="leastCharAlt" :pieVal="leastCharVal" :caption="leastCharAlt" />
           </div>
         </div>
@@ -49,20 +49,20 @@
         </div>
         <div id="sidebar-char-drawn" class="flex">
           <div id="char-drawn_container" class="flex flex-column">
-            <h4>{{mostDrawnLabel}}</h4>
+            <h4>Most character drawn</h4>
             <ImgPieChart :pieImg="mostCharImg" :alt="mostCharAlt" :pieVal="mostCharVal" :caption="mostCharAlt" />
           </div>
           <div id="char-drawn_container" class="flex flex-column">
-            <h4>{{leastDrawnLabel}}</h4>
+            <h4>Least character drawn</h4>
             <ImgPieChart :pieImg="leastCharImg" :pieAlt="leastCharAlt" :pieVal="leastCharVal" :caption="leastCharAlt" />
           </div>
         </div>
         <div id="sidebar-row" class="flex flex-column">
-          <h4>{{mostSpeciesLabel}}</h4>
+          <h4>Most species drawn</h4>
           <SpeciesChip />
         </div>
         <div id="sidebar-row" class="flex flex-column">
-          <h4>{{leastSpeciesLabel}}</h4>
+          <h4>Least species drawn</h4>
           <SpeciesChip />
         </div>
       </pds-year-container>

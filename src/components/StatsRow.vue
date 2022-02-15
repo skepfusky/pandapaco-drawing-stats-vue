@@ -4,19 +4,19 @@
       <h1>{{ yearHeading }}</h1>
       <div class="grid justify-center">
         <div id="pie-item" class="flex flex-column">
-          <h3>{{ mostDrawnLabel }}</h3>
+          <h3>Most character drawn</h3>
           <ImgPieChart :pieImg="mostCharImg" :pieAlt="mostCharAlt" :pieVal="mostCharVal" :caption="mostCharAlt" />
         </div>
         <div id="pie-item" class="flex flex-column">
-          <h3>{{ leastDrawnLabel }}</h3>
+          <h3>Least character drawn</h3>
           <ImgPieChart :pieImg="leastCharImg" :pieAlt="leastCharAlt" :pieVal="leastCharVal" :caption="leastCharAlt"/>
         </div>
         <div id="pie-item" class="flex flex-column">
-          <h3>{{ mostSpeciesLabel }}</h3>
+          <h3>Most species drawn</h3>
           <ImgPieChart :pieImg="mostCharImg" :pieAlt="mostCharAlt" :pieVal="mostCharVal" :caption="mostCharAlt"/>
         </div>
         <div id="pie-item" class="flex flex-column">
-          <h3>{{ leastSpeciesLabel }}</h3>
+          <h3>Least species drawn</h3>
           <ImgPieChart :pieImg="leastCharImg" :pieAlt="leastCharAlt" :pieVal="leastCharVal" :caption="leastCharAlt"/>
         </div>
       </div>

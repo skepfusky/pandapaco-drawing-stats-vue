@@ -1,3 +1,23 @@
+<script setup>
+import { defineAsyncComponent } from "vue"
+import AsideContent from "../components/AsideContent.vue"
+
+const GalleryGrid = defineAsyncComponent(
+  () => import("../components/GalleryGrid.vue")
+)
+
+const BackdropWaterfall = defineAsyncComponent(
+  () => import("../components/BackdropWaterfall.vue")
+) 
+
+const StatsRow = defineAsyncComponent(
+  () => import("../components/StatsRow.vue")
+)
+
+// import ImgPieChart from "../components/layouts/ImgPieChart.vue"
+// import MediumPieChart from "../components/layouts/MediumPieChart.vue"
+</script>
+
 <template>
   <main class="home" role="main">
     <div id="top">
@@ -14,19 +34,19 @@
             <h1>{{ new Date().getFullYear() - 1}}</h1>
             <div class="grid justify-center">
               <div id="pie-item" class="flex flex-column">
-                <h3>{{mostDrawnLabel}}</h3>
+                <h3>Most character drawn</h3>
                 <ImgPieChart />
               </div>
               <div id="pie-item" class="flex flex-column">
-                <h3>{{leastDrawnLabel}}</h3>
+                <h3>Least character drawn</h3>
                 <ImgPieChart />
               </div>
               <div id="pie-item" class="flex flex-column">
-                <h3>{{mostSpeciesLabel}}</h3>
+                <h3>Most species drawn</h3>
                 <ImgPieChart />
               </div>
               <div id="pie-item" class="flex flex-column">
-                <h3>{{leastSpeciesLabel}}</h3>
+                <h3>Least species drawn</h3>
                 <ImgPieChart />
               </div>
             </div>
@@ -37,19 +57,19 @@
             <h1>{{ new Date().getFullYear() - 2}}</h1>
             <div class="grid justify-center">
               <div id="pie-item" class="flex flex-column">
-                <h3>{{mostDrawnLabel}}</h3>
+                <h3>Most character drawn</h3>
                 <ImgPieChart />
               </div>
               <div id="pie-item" class="flex flex-column">
-                <h3>{{leastDrawnLabel}}</h3>
+                <h3>Least character drawn</h3>
                 <ImgPieChart />
               </div>
               <div id="pie-item" class="flex flex-column">
-                <h3>{{mostSpeciesLabel}}</h3>
+                <h3>Most species drawn</h3>
                 <ImgPieChart />
               </div>
               <div id="pie-item" class="flex flex-column">
-                <h3>{{leastSpeciesLabel}}</h3>
+                <h3>Least species drawn</h3>
                 <ImgPieChart />
               </div>
             </div>
@@ -72,36 +92,6 @@
     </div>
   </main>
 </template>
-
-<script>
-import AsideContent from "../components/AsideContent.vue"
-import GalleryGrid from "../components/GalleryGrid.vue"
-// import ImgPieChart from "../components/layouts/ImgPieChart.vue"
-import BackdropWaterfall from "../components/BackdropWaterfall.vue"
-import StatsRow from "../components/StatsRow.vue"
-// import MediumPieChart from "../components/layouts/MediumPieChart.vue"
-
-export default {
-  name: 'HomePage',
-  data() {
-    return {
-      mediumLabel: 'Digital/Traditional',
-      mostDrawnLabel: 'Most character drawn',
-      leastDrawnLabel: 'Least character drawn',
-      mostSpeciesLabel: 'Most species drawn',
-      leastSpeciesLabel: 'Least species drawn',
-    }
-  },
-  components: {
-    AsideContent,
-    GalleryGrid,
-    // ImgPieChart,
-    BackdropWaterfall,
-    StatsRow,
-    // MediumPieChart
-  }
-}
-</script>
 
 <style lang="scss">
 #stats-wrapper {
