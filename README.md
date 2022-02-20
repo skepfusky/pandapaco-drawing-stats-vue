@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="https://github.com/skepfusky/pandapaco-art-statistics/blob/main/docs/project-banner-new.png?raw=true" alt="Repo banner">
-</p>
 <h1 align="center">Panda Paco Analytics Site</h1>
 <p align="center">
   <img src="https://img.shields.io/github/commit-activity/m/skepfusky/pandapaco-art-statistics?color=darkgreen&label=commits%2Fmonth">
@@ -16,13 +13,17 @@
 > For more in-depth and thorough explanation on how I gather, render, and manage
 > data, refer to the [`paco-drawing-data.ipynb`][notebook] file.
 
-This website collects all 1.9K drawings from a furry artist and illustrator
-*pandapaco*, and displays different types of data (i.e species drawn, expressions,
-number of characters drawn, etc, which are, for now, probably, hard-coded
-unfortunately and have to be updated manually)
+This repo collects all 1.9K (and counting) drawings from a furry artist and
+illustrator *pandapaco*. It displays different types of data (i.e species
+drawn, expressions, number of characters drawn, etc, which are, for now,
+probably, hard-coded unfortunately and have to be updated manually)
 
 I use Google Sheets and a handful of Python scripts to manage, parse, and plot
 data and Vue.js for the website as a whole.
+
+<p align="center">
+  <img src="https://github.com/skepfusky/pandapaco-art-statistics/blob/main/docs/project-banner-new.png?raw=true" alt="Repo banner">
+</p>
 
 ## About this project
 
@@ -31,14 +32,19 @@ project is through the McDonald's broken ice cream machine site and it'd be
 interesting to see in all of his drawings to see said data and it's various
 datasets.
 
-This project collects drawing data on the title and date of the piece, character's
-species and names, facial expressions, and the source where I got the data from.
-This task seem daunting since I have to manually source it through FurAffinity and
-DeviantArt for his draft drawings (including his *Art & Biro* comics). Unfortunately,
-drawings from Twitter won't be counted in order to ease the load on my end and
-the dataset as well since all the data gathered will be hardcoded to the site.
+As mentioned previously, this project collects the following:
 
-This whole process is explained further on the [Juypter Notebook][notebook] file.
+- The title and date of the piece
+- Number of character(s) species and names
+- Facial expressions
+- Media type (either drawn digital or traditional)
+- Programs/mediums used
+- The source where I got the data from
+
+I have to manually source it through FurAffinity and DeviantArt for his draft
+drawings (including his *Art & Biro* comics). Unfortunately, drawings from
+Twitter won't be counted in order to ease the load on my end and the dataset
+as well since all the data gathered will be hardcoded to the site.
 
 ## Why did you create this project?
 
