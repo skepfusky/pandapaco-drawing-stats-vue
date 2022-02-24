@@ -2,6 +2,7 @@
 <p align="center">
   <img src="https://img.shields.io/github/commit-activity/m/skepfusky/pandapaco-art-statistics?color=darkgreen&label=commits%2Fmonth">
   <img src="https://img.shields.io/github/last-commit/skepfusky/pandapaco-art-statistics">
+  <img src="https://wakatime.com/badge/github/skepfusky/pandapaco-art-statistics.svg">
 </p>
 
 > Spanish translation of this README is available [here][es].
