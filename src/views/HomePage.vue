@@ -34,19 +34,19 @@ const StatsRow = defineAsyncComponent(
             <h1>{{ new Date().getFullYear() - 1}}</h1>
             <div class="grid justify-center">
               <div id="pie-item" class="flex flex-column">
-                <h3>Most character drawn</h3>
+                <h3>{{ mostDrawnLabel }}</h3>
                 <ImgPieChart />
               </div>
               <div id="pie-item" class="flex flex-column">
-                <h3>Least character drawn</h3>
+                <h3>{{ leastDrawnLabel }}</h3>
                 <ImgPieChart />
               </div>
               <div id="pie-item" class="flex flex-column">
-                <h3>Most species drawn</h3>
+                <h3>{{ mostSpeciesLabel }}</h3>
                 <ImgPieChart />
               </div>
               <div id="pie-item" class="flex flex-column">
-                <h3>Least species drawn</h3>
+                <h3>{{ leastSpeciesLabel }}</h3>
                 <ImgPieChart />
               </div>
             </div>
@@ -57,19 +57,19 @@ const StatsRow = defineAsyncComponent(
             <h1>{{ new Date().getFullYear() - 2}}</h1>
             <div class="grid justify-center">
               <div id="pie-item" class="flex flex-column">
-                <h3>Most character drawn</h3>
+                <h3>{{ mostDrawnLabel }}</h3>
                 <ImgPieChart />
               </div>
               <div id="pie-item" class="flex flex-column">
-                <h3>Least character drawn</h3>
+                <h3>{{ leastDrawnLabel }}</h3>
                 <ImgPieChart />
               </div>
               <div id="pie-item" class="flex flex-column">
-                <h3>Most species drawn</h3>
+                <h3>{{ mostSpeciesLabel }}</h3>
                 <ImgPieChart />
               </div>
               <div id="pie-item" class="flex flex-column">
-                <h3>Least species drawn</h3>
+                <h3>{{ leastSpeciesLabel }}</h3>
                 <ImgPieChart />
               </div>
             </div>
