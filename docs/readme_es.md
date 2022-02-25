@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="https://github.com/skepfusky/pandapaco-art-statistics/blob/main/project-banner-new.png?raw=true" alt="Repo banner">
-</p>
 <h1 align="center">Sitio de Panda Paco Analytics</h1>
 <p align="center">
   <img src="https://img.shields.io/github/commit-activity/m/skepfusky/pandapaco-art-statistics?color=darkgreen&label=commits%2Fmonth&style=flat-square" align="center">
@@ -19,6 +16,10 @@ rígida y deben  actualizarse manualmente)
 
 Uso Google Sheets y un puñado de scripts Python para gestionar, paralizar y trazar datos
 y Vue.js para el sitio web en su conjunto.
+
+<p align="center">
+  <img src="https://github.com/skepfusky/pandapaco-art-statistics/blob/main/project-banner-new.png?raw=true" alt="Repo banner">
+</p>
 
 ## Acerca de este proyecto
 
