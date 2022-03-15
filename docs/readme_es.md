@@ -1,13 +1,13 @@
 <h1 align="center">Sitio de Panda Paco Analytics</h1>
-<p align="center">
-  <img src="https://img.shields.io/github/commit-activity/m/skepfusky/pandapaco-art-statistics?color=darkgreen&label=commits%2Fmonth&style=flat-square" align="center">
-  <img src="https://img.shields.io/github/last-commit/skepfusky/pandapaco-art-statistics?style=flat-square" align="center">
-</p>
 
 > Todos los datos sin procesar se almacenan en esta hoja de cálculo [de Google Sheet][sheet].
 
 > Para obtener una explicación más detallada sobre cómo recopilo, renderizo y administro
 datos, consulte el archivo [`paco-drawing-data.ipynb`][notebook].
+
+<p align="center">
+  <img src="https://github.com/skepfusky/pandapaco-art-statistics/blob/main/docs/project-banner-new.png?raw=true" alt="Repo banner">
+</p>
 
 Este sitio web recopila todos los 1.9K dibujos de un artista furry e ilustrador pandapaco
 y muestra diferentes tipos de datos (es decir, especies dibujadas, expresiones, número
@@ -16,10 +16,6 @@ rígida y deben  actualizarse manualmente)
 
 Uso Google Sheets y un puñado de scripts Python para gestionar, paralizar y trazar datos
 y Vue.js para el sitio web en su conjunto.
-
-<p align="center">
-  <img src="https://github.com/skepfusky/pandapaco-art-statistics/blob/main/project-banner-new.png?raw=true" alt="Repo banner">
-</p>
 
 ## Acerca de este proyecto
 
@@ -31,7 +27,7 @@ Este proyecto recopila datos de dibujo sobre el título y la fecha de la pieza, 
 especies y nombres de los personajes, las expresiones faciales y la fuente de donde
 obtuve los datos.  Esta tarea parece desalentadora ya que tengo que buscarla
 manualmente a través de FurAffinity y DeviantArt para sus dibujos de borrador (incluidos
-sus cómics de *Art & Biro*).  Desafortunadamente, los dibujos de Twitter no se contarán
+sus cómics de *Art & Biro*). Desafortunadamente, los dibujos de Twitter no se contarán
 para aliviar la carga de mi parte y también el conjunto de datos, ya que todos los datos
 recopilados estarán codificados en el sitio.
 

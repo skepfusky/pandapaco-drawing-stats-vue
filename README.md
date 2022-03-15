@@ -12,19 +12,19 @@
 > All raw data is stored in [this Google Sheet spreadsheet][sheet].
 
 > For more in-depth and thorough explanation on how I gather, render, and manage
-> data, refer to the [`paco-drawing-data.ipynb`][notebook] file.
-
-This repo collects all 1.9K (and counting) drawings from a furry artist and
-illustrator *pandapaco*. It displays different types of data (i.e species
-drawn, expressions, number of characters drawn, etc, which are, for now,
-probably, hard-coded unfortunately and have to be updated manually)
-
-I use Google Sheets and a handful of Python scripts to manage, parse, and plot
-data and Vue.js for the website as a whole.
+> data, refer to the [`paco-drawing-data.ipynb`][notebook] file. (it'll be moved as a Gist once it's complete)
 
 <p align="center">
   <img src="https://github.com/skepfusky/pandapaco-art-statistics/blob/main/docs/project-banner-new.png?raw=true" alt="Repo banner">
 </p>
+
+This is a project that collects all 1.9K (and counting) drawings from a furry artist and
+illustrator *pandapaco*. It displays different types of data (i.e species
+drawn, expressions, number of characters drawn, etc, which are, for now,
+probably, hard-coded unfortunately and have to be updated manually)
+
+I use Google Sheets and some Python scripts to manage, parse, and plot
+data and Vue.js for the website as a whole.
 
 ## About this project
 
@@ -37,10 +37,10 @@ As mentioned previously, this project collects the following:
 
 - The title and date of the piece
 - Number of character(s) species and names
-- Facial expressions
+- ~~Facial expressions~~ (dataset removed on March 13, 2022 because it was deemed too ambiguous and hard to distinguish a facial expression)
 - Media type (either drawn digital or traditional)
-- Programs/mediums used
-- The source where I got the data from
+- Programs/mediums used (added Feb 6, 2022)
+- The source where I got the data from (either from FurAffinity or from DeviantArt)
 
 I have to manually source it through FurAffinity and DeviantArt for his draft
 drawings (including his *Art & Biro* comics). Unfortunately, drawings from
