@@ -35,36 +35,5 @@ def speciesToTxt():
     f.write(kiddieland)
     
   # print('Dookied out ' + pp + 'file')
-
-def expressionsToTxt():
-  expressions_array = df.drop(columns=['Date', 'Name', 'Character(s)', 'Species', 'Type', 'Source'])
-  expressions_array.to_numpy()
-
-  pp = 'merged/expressions_merged.csv'
-
-  with open(pp, 'w') as f:
-    bruh = expressions_array.to_string(index=False)
-    f.write(bruh)
-
-  with open(pp, 'r') as f:
-    kiddieland = f.read().replace(' ', '')
-
-  with open(pp, 'w') as f:
-    f.write(kiddieland)
-
-  with open(pp, 'r') as f:
-    kiddieland = f.read().replace('\n', ',')
-
-  with open(pp, 'w') as f:
-    f.write(kiddieland)
-
-  with open(pp, 'r') as f:
-    kiddieland = f.read().replace(',', '\n')
-
-  with open(pp, 'w') as f:
-    f.write(kiddieland)
-
-  # print('Dookied out ' + pp + 'file lol')
   
 speciesToTxt()
-expressionsToTxt()
