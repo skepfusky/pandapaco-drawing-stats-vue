@@ -117,7 +117,6 @@
   }
 }
 
-
 #caption_percentage {
   font-size: 90%;
   opacity: .5;
@@ -126,8 +125,6 @@
 /* Flexbox related classes */
 .flex {
   display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
 }
 
 .justify-center {
@@ -153,8 +150,6 @@
 /* Gridbox */
 .grid {
   display: grid;
-  display: -ms-grid;
-  display: -moz-grid;
 }
 
 /* Misc */

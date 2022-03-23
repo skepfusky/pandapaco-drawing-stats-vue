@@ -71,7 +71,7 @@
 </template>
 
 <script>
-import SpeciesChip from "./aside_components/SpeciesChip.vue";
+import SpeciesChip from "./aside_components/SpeciesChipAside.vue";
 import TotalCounter from "./aside_components/TotalCounter.vue";
 import ImgPieChart from "./layouts/ImgPieChart.vue";
 
@@ -110,3 +110,116 @@ export default {
   components: { SpeciesChip, TotalCounter, ImgPieChart }
 }
 </script>
+
+<style lang="scss">
+
+aside img {
+  border-radius: 50%;
+}
+
+pds-species-container,
+pds-year-container {
+  row-gap: 0.55rem;
+  padding: 0.85rem;
+}
+
+pds-species-container img {
+  width: max(50%, 140px);
+}
+
+#sidebar-row,
+#sidebar-char-drawn {
+  position: relative;
+}
+
+#sidebar-char-drawn {
+  flex-direction: column;
+
+  @media only screen and (min-width: 1400px) {
+    flex-direction: row;
+  }
+  @media only screen and (max-width: 960px) {
+    flex-direction: row;
+  }
+}
+
+#char-drawn_container {
+  text-align: center;
+  row-gap: 0.55ex;
+
+  h4 {
+    font-size: 102.5%;
+    margin-bottom: 0.35rem;
+  }
+}
+
+#year {
+  &-row {
+    margin: 0 auto;
+    column-gap: 1.2rem;
+    align-items: center;
+  }
+  
+  &-navigator {
+    column-gap: 0.3rem;
+    
+    > .svg-inline--fa {
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+
+#chip-color {
+  border: 1px solid #aaa;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+pds-species-chip {
+  width: max-content;
+
+  > a {
+    column-gap: 0.25rem;
+  } 
+}
+
+#pds-bar-wrapper {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#pds-md {
+  &-traditional, &-digital {
+    border: 1px solid #aaa;
+    height: 14px;
+  }
+
+  &-digital {
+    position: relative;
+    background: var(--pds-bar-digital);
+    z-index: 2;
+  }
+
+  &-traditional {
+    z-index: 1;
+    background: var(--pds-bar-traditional);
+  }
+
+  &-lower-third {
+    column-gap: 1rem;
+    margin: 0 auto;    
+    padding: 0.32rem 0;
+    font-size: 90%;
+    flex-direction: column;
+    text-align: center;
+    @media only screen and (min-width: 1366px) {
+      flex-direction: row;
+    }
+    @media only screen and (max-width: 960px) {
+      flex-direction: row;
+    }
+  }
+}
+</style>

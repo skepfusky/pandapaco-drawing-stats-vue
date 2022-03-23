@@ -1,8 +1,21 @@
 <template>
   <pds-species-chip>
-    <a href="#" class="flex align-center">
-      <span id="chip-color" style="background: var(--s-fox);"></span>
-      <strong>Biscuit</strong>
-    </a>
+    <img :src="img" :alt="name" :aria-label="name">
+    <span>{{ name }}</span>
   </pds-species-chip>
 </template>
+
+<script>
+export default {
+  props: {
+    name: String,
+    img: String,
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+pds-species-chip {
+  display: flex;
+}
+</style>

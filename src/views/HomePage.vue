@@ -1,71 +1,25 @@
 <script setup>
 import { defineAsyncComponent } from "vue"
 import AsideContent from "../components/AsideContent.vue"
-import ImgPieChart from "../components/layouts/ImgPieChart.vue"
 
 const GalleryGrid = defineAsyncComponent(() => import("../components/GalleryGrid.vue"))
-const BackdropWaterfall = defineAsyncComponent(() => import("../components/BackdropWaterfall.vue")) 
 const StatsRow = defineAsyncComponent(() => import("../components/StatsRow.vue"))
 </script>
 
 <template>
   <main class="home" role="main">
     <div id="top">
-      <BackdropWaterfall />
+      some stuff in here
     </div>
     <div id="component-wrapper">
       <div id="stats-wrapper" class="flex flex-column">
         <StatsRow :yearHeading="new Date().getFullYear()" />
         <StatsRow :yearHeading="new Date().getFullYear() - 1" />
         <StatsRow :yearHeading="new Date().getFullYear() - 2" />
-        
-        <pds-stats-latest>
-          <div id="wrapper" class="flex">
-            <h1>{{ new Date().getFullYear() - 1}}</h1>
-            <div class="grid justify-center">
-              <div id="pie-item" class="flex flex-column">
-                <h3>{{ mostDrawnLabel }}</h3>
-                <ImgPieChart />
-              </div>
-              <div id="pie-item" class="flex flex-column">
-                <h3>{{ leastDrawnLabel }}</h3>
-                <ImgPieChart />
-              </div>
-              <div id="pie-item" class="flex flex-column">
-                <h3>{{ mostSpeciesLabel }}</h3>
-                <ImgPieChart />
-              </div>
-              <div id="pie-item" class="flex flex-column">
-                <h3>{{ leastSpeciesLabel }}</h3>
-                <ImgPieChart />
-              </div>
-            </div>
-          </div>
-        </pds-stats-latest>
-        <pds-stats-latest>
-          <div id="wrapper" class="flex">
-            <h1>{{ new Date().getFullYear() - 2}}</h1>
-            <div class="grid justify-center">
-              <div id="pie-item" class="flex flex-column">
-                <h3>{{ mostDrawnLabel }}</h3>
-                <ImgPieChart />
-              </div>
-              <div id="pie-item" class="flex flex-column">
-                <h3>{{ leastDrawnLabel }}</h3>
-                <ImgPieChart />
-              </div>
-              <div id="pie-item" class="flex flex-column">
-                <h3>{{ mostSpeciesLabel }}</h3>
-                <ImgPieChart />
-              </div>
-              <div id="pie-item" class="flex flex-column">
-                <h3>{{ leastSpeciesLabel }}</h3>
-                <ImgPieChart />
-              </div>
-            </div>
-          </div>
-        </pds-stats-latest>
       </div>
+    </div>
+    <div id="component-wrapper">
+      <h2>Top 10 Species All Time</h2>
     </div>
     <!-- Seperated for each vue-router for species and year -->
     <div id="component-wrapper" class="flex">
