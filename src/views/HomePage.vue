@@ -1,21 +1,11 @@
 <script setup>
 import { defineAsyncComponent } from "vue"
 import AsideContent from "../components/AsideContent.vue"
+import ImgPieChart from "../components/layouts/ImgPieChart.vue"
 
-const GalleryGrid = defineAsyncComponent(
-  () => import("../components/GalleryGrid.vue")
-)
-
-const BackdropWaterfall = defineAsyncComponent(
-  () => import("../components/BackdropWaterfall.vue")
-) 
-
-const StatsRow = defineAsyncComponent(
-  () => import("../components/StatsRow.vue")
-)
-
-// import ImgPieChart from "../components/layouts/ImgPieChart.vue"
-// import MediumPieChart from "../components/layouts/MediumPieChart.vue"
+const GalleryGrid = defineAsyncComponent(() => import("../components/GalleryGrid.vue"))
+const BackdropWaterfall = defineAsyncComponent(() => import("../components/BackdropWaterfall.vue")) 
+const StatsRow = defineAsyncComponent(() => import("../components/StatsRow.vue"))
 </script>
 
 <template>
@@ -29,7 +19,7 @@ const StatsRow = defineAsyncComponent(
         <StatsRow :yearHeading="new Date().getFullYear() - 1" />
         <StatsRow :yearHeading="new Date().getFullYear() - 2" />
         
-        <!-- <pds-stats-latest>
+        <pds-stats-latest>
           <div id="wrapper" class="flex">
             <h1>{{ new Date().getFullYear() - 1}}</h1>
             <div class="grid justify-center">
@@ -74,7 +64,7 @@ const StatsRow = defineAsyncComponent(
               </div>
             </div>
           </div>
-        </pds-stats-latest> -->
+        </pds-stats-latest>
       </div>
     </div>
     <!-- Seperated for each vue-router for species and year -->
