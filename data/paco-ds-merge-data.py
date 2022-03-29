@@ -9,29 +9,14 @@ def speciesToTxt():
 
   pp = 'merged/species_merged.csv'
   
-  with open(pp, 'w') as f:
+  with open(pp, 'r+') as f:
     bruh = species_array.to_string(index=False)
     f.write(bruh)
-
-  with open(pp, 'r') as f:
-    kiddieland = f.read().replace(' ', '') # Removes whitespace
-
-  with open(pp, 'w') as f:
+    kiddieland = f.read().replace(' ', '')
     f.write(kiddieland)
-
-  with open(pp, 'r') as f:
-    kiddieland = f.read().replace('\n', ',') # Replaces line break with a comma
-
-  with open(pp, 'w') as f:
+    kiddieland = f.read().replace('\n', ',')
     f.write(kiddieland)
-
-  with open(pp, 'r') as f:
-    kiddieland = f.read().replace(',', '\n') # and vice versa
-
-  with open(pp, 'w') as f:
-    f.write(kiddieland)
-  
-  with open(pp, 'w') as f:
+    kiddieland = f.read().replace(',', '\n')
     f.write(kiddieland)
     
   # print('Dookied out ' + pp + 'file')
