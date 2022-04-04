@@ -5,7 +5,7 @@ import re
 # import time
 from bs4 import BeautifulSoup
 
-stop = 1
+stop = 2
 
 HEADERS = {'user-agent': ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5)' 
                           'AppleWebKit/537.36 (KHTML, like Gecko)'
@@ -16,7 +16,7 @@ paco_db = {}
 
 # Get 48 artworks through a for loop in each pages
 for page in range(1, stop + 1):
-  
+  paco_db.update({page: []})
   find_art = requests.get(f"https://furaffinity.net/gallery/pacopanda/{page}/?", headers=HEADERS)
   parse_art = BeautifulSoup(find_art.text, 'html.parser')
   parse_art = parse_art.find_all('figure', {'id': re.compile("sid-*")})
@@ -39,10 +39,9 @@ for page in range(1, stop + 1):
         art_image = parse_art_id.find('img', {'id': 'submissionImg'})['src']
         art_image = f'https:{art_image}'
       else:
-        # art_image = parse_art_id.find('div', {'class': 'aligncenter submission-area'})
-        art_image = 'null'
+        art_image = 'null, item is anything other than an image'
 
-      # Find date and
+      # Get date
       art_date = parse_art_id.find('span', {'class': 'popup_date'})['title']
 
       # TODO: filter only date using regex
@@ -55,17 +54,17 @@ for page in range(1, stop + 1):
       # Find description
       art_desc = parse_art_id.find('div', {'class': 'submission-description user-submitted-links'}).get_text()
 
-      paco_db.append({
-        "title": art_title,
-        "date": art_date,
-        "id": sid_concat,
-        "link": art_image
+      paco_db[page].append({
+        'name': art_title,
+        'date': art_date,
+        'link': art_image,
+        "description": art_desc,
       })
       
       print(f"Currently on page {page} of {stop} | {art_title} | {sid_concat} | {art_date}")
 
-  # Save to JSON
-  with open("paco-fa-database.json", 'w') as append_paco_data:
-    json.dump(paco_db, append_paco_data, ensure_ascii=False)
+# Save to JSON
+with open("paco-fa-database.json", 'w') as append_paco_data:
+  json.dump(paco_db, append_paco_data, ensure_ascii=False)
 
-  print("Your mom")
+print("Your mom")
