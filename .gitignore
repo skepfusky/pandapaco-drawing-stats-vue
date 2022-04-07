@@ -2,6 +2,9 @@
 node_modules
 /dist
 
+paco-fa-database.json
+paco-da-database.json
+
 # lmao we don't need this
 /data/merged/*.txt
 
