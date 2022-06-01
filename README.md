@@ -1,3 +1,5 @@
+# NOTE: This branch contains the old files for this project and is no longer being worked on.
+
 <h1 align="center">Panda Paco Analytics Site</h1>
 <p align="center">
   <img src="https://img.shields.io/github/commit-activity/m/skepfusky/pandapaco-art-statistics?color=darkgreen&label=commits%2Fmonth">
@@ -15,7 +17,7 @@
 > data, refer to the [`paco-drawing-data.ipynb`][notebook] file. (it'll be moved as a Gist once it's complete)
 
 <p align="center">
-  <img src="https://github.com/skepfusky/pandapaco-art-statistics/blob/main/docs/project-banner-new.png?raw=true" alt="Repo banner">
+  <img src="https://user-images.githubusercontent.com/94678583/171304604-7c569037-ede7-4fb1-8401-1f9e37562227.png" alt="Repo banner">
 </p>
 
 This is a project that collects all 1.9K (and counting) drawings from a furry artist and
