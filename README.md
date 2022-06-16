@@ -1,15 +1,6 @@
-# NOTE: This branch contains the old files for this project and is no longer being worked on.
+# ⚠️ NOTE: This repo contains the archive of the old stats project written in Vue and has moved to a [new repository](https://github.com/skepfusky/pacopanda-drawing-stats).
 
 <h1 align="center">Panda Paco Analytics Site</h1>
-<p align="center">
-  <img src="https://img.shields.io/github/commit-activity/m/skepfusky/pandapaco-art-statistics?color=darkgreen&label=commits%2Fmonth">
-  <img src="https://img.shields.io/github/last-commit/skepfusky/pandapaco-art-statistics">
-  <img src="https://wakatime.com/badge/github/skepfusky/pandapaco-art-statistics.svg">
-</p>
-
-> Spanish translation of this README is available [here][es].
->
-> La traducción española de este README está disponible [aquí][es].
 
 > All raw data is stored in [this Google Sheet spreadsheet][sheet].
 
@@ -61,7 +52,5 @@ Previously, I wanted to show realtime data from Google Sheets and render data vi
 library from a website and I'd thought I'll take one of my favorite artists and run it
 through this process, but I'm kinda lacking backend knowledge.
 
-[es]: https://github.com/skepfusky/pandapaco-art-statistics/docs/readme_es.md
-[pancon]: https://www.youtube.com/channel/UCTI9uf8OMcIo7QQMFS0Sfzw
-[notebook]: https://github.com/skepfusky/pandapaco-art-statistics/blob/main/data/paco-drawing-data.ipynb
+[notebook]: https://github.com/skepfusky/pandapaco-drawing-stats-vue/blob/main/data/paco-drawing-data.ipynb
 [sheet]: https://docs.google.com/spreadsheets/d/1fpNL-qbfZ53H-6WdqEB2X9rwn9QmM1porJqKgBC7rPk/edit?usp=sharing
